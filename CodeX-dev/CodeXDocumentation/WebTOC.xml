@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="f2e6da53-20e3-4ff6-bb0e-871fb9f313b7" Title="CodeX Namespace" Url="html/N_CodeX.htm">
+    <HelpTOCNode Id="f9a9919e-8202-4498-aa7c-0e71caee9728" Title="Security Class" Url="html/T_CodeX_Security.htm">
+      <HelpTOCNode Title="Security Members" Url="html/AllMembers_T_CodeX_Security.htm" />
+      <HelpTOCNode Id="125efca2-a600-4b0b-907a-1af91374f8da" Title="Security Methods" Url="html/Methods_T_CodeX_Security.htm">
+        <HelpTOCNode Title="Decrypt Method " Url="html/M_CodeX_Security_Decrypt.htm" />
+        <HelpTOCNode Id="2585742e-81e6-4dc0-8560-07662a951e36" Title="Encrypt Method " Url="html/Overload_CodeX_Security_Encrypt.htm">
+          <HelpTOCNode Title="Encrypt Method (String, HashAlgorithm)" Url="html/M_CodeX_Security_Encrypt.htm" />
+          <HelpTOCNode Title="Encrypt Method (String, String, String)" Url="html/M_CodeX_Security_Encrypt_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GeneratePassword Method " Url="html/M_CodeX_Security_GeneratePassword.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c7fce819-8d65-44f7-b7d2-b8d8e0947cb5" Title="CodeX.Configuration Namespace" Url="html/N_CodeX_Configuration.htm">
+    <HelpTOCNode Id="0c3aab81-48bb-435b-b17d-bb454e48c28b" Title="Configuration Class" Url="html/T_CodeX_Configuration_Configuration.htm">
+      <HelpTOCNode Title="Configuration Members" Url="html/AllMembers_T_CodeX_Configuration_Configuration.htm" />
+      <HelpTOCNode Id="9074a281-f73f-4315-aebb-2177707f43cc" Title="Configuration Methods" Url="html/Methods_T_CodeX_Configuration_Configuration.htm">
+        <HelpTOCNode Title="GetConnectionString Method " Url="html/M_CodeX_Configuration_Configuration_GetConnectionString.htm" />
+        <HelpTOCNode Title="GetSettings Method " Url="html/M_CodeX_Configuration_Configuration_GetSettings.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="5fcf9ead-50b1-4c68-9181-a5eddfe0783c" Title="CodeX.Core Namespace" Url="html/N_CodeX_Core.htm">
+    <HelpTOCNode Id="67684cb5-acc9-48bd-aa5b-ea4dcf96dec2" Title="Core Class" Url="html/T_CodeX_Core_Core.htm">
+      <HelpTOCNode Title="Core Members" Url="html/AllMembers_T_CodeX_Core_Core.htm" />
+      <HelpTOCNode Id="4d60a5aa-8bef-41b8-91b1-389a9d8b4637" Title="Core Methods" Url="html/Methods_T_CodeX_Core_Core.htm">
+        <HelpTOCNode Title="AsString Method " Url="html/M_CodeX_Core_Core_AsString.htm" />
+        <HelpTOCNode Title="CombineByteArrays Method " Url="html/M_CodeX_Core_Core_CombineByteArrays.htm" />
+        <HelpTOCNode Title="In(T) Method " Url="html/M_CodeX_Core_Core_In__1.htm" />
+        <HelpTOCNode Title="ToEnum(T) Method " Url="html/M_CodeX_Core_Core_ToEnum__1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d7c57090-0fd4-4c85-9e5d-b2a4bc02f1ae" Title="CodeX.Data Namespace" Url="html/N_CodeX_Data.htm">
+    <HelpTOCNode Id="93cd3937-d8ea-41df-a87f-69a6acb088a1" Title="Data Class" Url="html/T_CodeX_Data_Data.htm">
+      <HelpTOCNode Title="Data Members" Url="html/AllMembers_T_CodeX_Data_Data.htm" />
+      <HelpTOCNode Id="b8a77d4e-8974-4d41-98f6-2b90111f386a" Title="Data Methods" Url="html/Methods_T_CodeX_Data_Data.htm">
+        <HelpTOCNode Id="4ae962f4-0d53-4fe4-8dac-54e979f18b44" Title="AddRange Method " Url="html/Overload_CodeX_Data_Data_AddRange.htm">
+          <HelpTOCNode Title="AddRange(TKey, TValue) Method (Dictionary(TKey, IEnumerable(TValue)), TKey, IEnumerable(TValue), Boolean)" Url="html/M_CodeX_Data_Data_AddRange__2.htm" />
+          <HelpTOCNode Title="AddRange(TKey, TValue) Method (Dictionary(TKey, IEnumerable(TValue)), TKey, TValue, Boolean)" Url="html/M_CodeX_Data_Data_AddRange__2_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="FindNextIndex(T) Method " Url="html/M_CodeX_Data_Data_FindNextIndex__1.htm" />
+        <HelpTOCNode Title="Match(T) Method " Url="html/M_CodeX_Data_Data_Match__1.htm" />
+        <HelpTOCNode Title="Validate Method " Url="html/M_CodeX_Data_Data_Validate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c0b4f6ac-664b-4fff-96d4-da810761acf4" Title="CodeX.Date Namespace" Url="html/N_CodeX_Date.htm">
+    <HelpTOCNode Id="8c2b4ad8-54e7-4bdd-aba3-5a7e204c3445" Title="Date Class" Url="html/T_CodeX_Date_Date.htm">
+      <HelpTOCNode Title="Date Members" Url="html/AllMembers_T_CodeX_Date_Date.htm" />
+      <HelpTOCNode Id="d6778f1d-c17d-4036-ae8d-d61b543381ce" Title="Date Methods" Url="html/Methods_T_CodeX_Date_Date.htm">
+        <HelpTOCNode Title="Apr Method " Url="html/M_CodeX_Date_Date_Apr.htm" />
+        <HelpTOCNode Title="Aug Method " Url="html/M_CodeX_Date_Date_Aug.htm" />
+        <HelpTOCNode Title="Dec Method " Url="html/M_CodeX_Date_Date_Dec.htm" />
+        <HelpTOCNode Title="Feb Method " Url="html/M_CodeX_Date_Date_Feb.htm" />
+        <HelpTOCNode Title="IsLeapYear Method " Url="html/M_CodeX_Date_Date_IsLeapYear.htm" />
+        <HelpTOCNode Title="Jan Method " Url="html/M_CodeX_Date_Date_Jan.htm" />
+        <HelpTOCNode Title="Jul Method " Url="html/M_CodeX_Date_Date_Jul.htm" />
+        <HelpTOCNode Title="Jun Method " Url="html/M_CodeX_Date_Date_Jun.htm" />
+        <HelpTOCNode Title="Mar Method " Url="html/M_CodeX_Date_Date_Mar.htm" />
+        <HelpTOCNode Title="May Method " Url="html/M_CodeX_Date_Date_May.htm" />
+        <HelpTOCNode Title="Nov Method " Url="html/M_CodeX_Date_Date_Nov.htm" />
+        <HelpTOCNode Title="Oct Method " Url="html/M_CodeX_Date_Date_Oct.htm" />
+        <HelpTOCNode Title="Sep Method " Url="html/M_CodeX_Date_Date_Sep.htm" />
+        <HelpTOCNode Title="ToDateTime Method " Url="html/M_CodeX_Date_Date_ToDateTime.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="16bbc342-b50e-4f9e-8ef7-936d433c0bc3" Title="CodeX.IO Namespace" Url="html/N_CodeX_IO.htm">
+    <HelpTOCNode Id="dc1c16a4-91b1-4b8e-aa96-56b830bf73ee" Title="IO Class" Url="html/T_CodeX_IO_IO.htm">
+      <HelpTOCNode Title="IO Members" Url="html/AllMembers_T_CodeX_IO_IO.htm" />
+      <HelpTOCNode Id="dde704ee-c184-4d79-88f4-2505524e0b17" Title="IO Methods" Url="html/Methods_T_CodeX_IO_IO.htm">
+        <HelpTOCNode Title="AddRange Method " Url="html/M_CodeX_IO_IO_AddRange.htm" />
+        <HelpTOCNode Title="AsFile Method " Url="html/M_CodeX_IO_IO_AsFile.htm" />
+        <HelpTOCNode Title="AsFolder Method " Url="html/M_CodeX_IO_IO_AsFolder.htm" />
+        <HelpTOCNode Id="7131b49c-a880-4ca8-a43d-903f8311f697" Title="AsImage Method " Url="html/Overload_CodeX_IO_IO_AsImage.htm">
+          <HelpTOCNode Title="AsImage Method (String)" Url="html/M_CodeX_IO_IO_AsImage.htm" />
+          <HelpTOCNode Title="AsImage Method (Uri)" Url="html/M_CodeX_IO_IO_AsImage_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="AsUri Method " Url="html/M_CodeX_IO_IO_AsUri.htm" />
+        <HelpTOCNode Id="d2fe7015-7ef2-4916-8daf-ccf950342a6b" Title="EnumerateFiles Method " Url="html/Overload_CodeX_IO_IO_EnumerateFiles.htm">
+          <HelpTOCNode Title="EnumerateFiles Method (DirectoryInfo, IEnumerable(String))" Url="html/M_CodeX_IO_IO_EnumerateFiles.htm" />
+          <HelpTOCNode Title="EnumerateFiles Method (DirectoryInfo, IEnumerable(String), SearchOption)" Url="html/M_CodeX_IO_IO_EnumerateFiles_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="f70557af-d0b2-4d64-8ee7-cf40e54a047a" Title="GetFiles Method " Url="html/Overload_CodeX_IO_IO_GetFiles.htm">
+          <HelpTOCNode Title="GetFiles Method (DirectoryInfo, IEnumerable(String))" Url="html/M_CodeX_IO_IO_GetFiles.htm" />
+          <HelpTOCNode Title="GetFiles Method (DirectoryInfo, IEnumerable(String), SearchOption)" Url="html/M_CodeX_IO_IO_GetFiles_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="efd1d5b7-86ef-49a4-88df-de290896b7fc" Title="Lines Method " Url="html/Overload_CodeX_IO_IO_Lines.htm">
+          <HelpTOCNode Title="Lines Method (FileInfo)" Url="html/M_CodeX_IO_IO_Lines.htm" />
+          <HelpTOCNode Title="Lines Method (String)" Url="html/M_CodeX_IO_IO_Lines_2.htm" />
+          <HelpTOCNode Title="Lines Method (FileInfo, Encoding)" Url="html/M_CodeX_IO_IO_Lines_1.htm" />
+          <HelpTOCNode Title="Lines Method (String, Encoding)" Url="html/M_CodeX_IO_IO_Lines_3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="cb544a26-1fe4-4f86-a56a-3d6c0af1e972" Title="ReadAsText Method " Url="html/Overload_CodeX_IO_IO_ReadAsText.htm">
+          <HelpTOCNode Title="ReadAsText Method (FileInfo)" Url="html/M_CodeX_IO_IO_ReadAsText.htm" />
+          <HelpTOCNode Title="ReadAsText Method (FileInfo, Encoding)" Url="html/M_CodeX_IO_IO_ReadAsText_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8c63f2aa-781a-43e0-9aaf-e04118418dac" Title="Sort Method " Url="html/Overload_CodeX_IO_IO_Sort.htm">
+          <HelpTOCNode Title="Sort Method (String, Int32, ListSortDirection, String)" Url="html/M_CodeX_IO_IO_Sort.htm" />
+          <HelpTOCNode Title="Sort Method (String, String, ListSortDirection, String)" Url="html/M_CodeX_IO_IO_Sort_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="bd7719f8-ca1a-4863-a775-a45cea81dfe2" Title="ToBase64String Method " Url="html/Overload_CodeX_IO_IO_ToBase64String.htm">
+          <HelpTOCNode Title="ToBase64String Method (Byte[], Base64FormattingOptions)" Url="html/M_CodeX_IO_IO_ToBase64String.htm" />
+          <HelpTOCNode Title="ToBase64String Method (Byte[], Int32, Int32, Base64FormattingOptions)" Url="html/M_CodeX_IO_IO_ToBase64String_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ToBinary Method " Url="html/M_CodeX_IO_IO_ToBinary.htm" />
+        <HelpTOCNode Title="ToDataTable Method " Url="html/M_CodeX_IO_IO_ToDataTable.htm" />
+        <HelpTOCNode Id="e7560bb7-75cc-4b1d-a972-01b4b7a64371" Title="ToObject Method " Url="html/Overload_CodeX_IO_IO_ToObject.htm">
+          <HelpTOCNode Title="ToObject(T) Method (Stream)" Url="html/M_CodeX_IO_IO_ToObject__1.htm" />
+          <HelpTOCNode Title="ToObject(T) Method (String)" Url="html/M_CodeX_IO_IO_ToObject__1_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2d66f760-5a6b-4911-a5b6-336b9bee5d5d" Title="ToStream Method " Url="html/Overload_CodeX_IO_IO_ToStream.htm">
+          <HelpTOCNode Title="ToStream Method (Image)" Url="html/M_CodeX_IO_IO_ToStream.htm" />
+          <HelpTOCNode Title="ToStream Method (Image, ImageFormat)" Url="html/M_CodeX_IO_IO_ToStream_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ToXml(T) Method " Url="html/M_CodeX_IO_IO_ToXml__1.htm" />
+        <HelpTOCNode Title="Words Method " Url="html/M_CodeX_IO_IO_Words.htm" />
+        <HelpTOCNode Id="43f90d10-2b0e-4542-a1d6-6eb1127e3213" Title="WriteText Method " Url="html/Overload_CodeX_IO_IO_WriteText.htm">
+          <HelpTOCNode Title="WriteText Method (FileInfo, String)" Url="html/M_CodeX_IO_IO_WriteText.htm" />
+          <HelpTOCNode Title="WriteText Method (FileInfo, String, Encoding)" Url="html/M_CodeX_IO_IO_WriteText_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="bfa09296-f53f-4472-a9b9-3a7518ff3a0c" Title="WriteToFile Method " Url="html/Overload_CodeX_IO_IO_WriteToFile.htm">
+          <HelpTOCNode Title="WriteToFile Method (IEnumerable(String), String)" Url="html/M_CodeX_IO_IO_WriteToFile.htm" />
+          <HelpTOCNode Title="WriteToFile Method (IEnumerable(String), String, Encoding)" Url="html/M_CodeX_IO_IO_WriteToFile_1.htm" />
+          <HelpTOCNode Title="WriteToFile Method (DataTable, String, String)" Url="html/M_CodeX_IO_IO_WriteToFile_2.htm" />
+          <HelpTOCNode Title="WriteToFile Method (DataTable, String, Encoding, String)" Url="html/M_CodeX_IO_IO_WriteToFile_3.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="43c65db8-1536-499a-892a-a81337c88e37" Title="CodeX.Strings Namespace" Url="html/N_CodeX_Strings.htm">
+    <HelpTOCNode Id="3eccd201-8551-4ae4-84b1-8a8c99aaf59b" Title="Strings Class" Url="html/T_CodeX_Strings_Strings.htm">
+      <HelpTOCNode Title="Strings Members" Url="html/AllMembers_T_CodeX_Strings_Strings.htm" />
+      <HelpTOCNode Id="8343b74c-41f5-4420-bc08-f65a6b8cc65e" Title="Strings Methods" Url="html/Methods_T_CodeX_Strings_Strings.htm">
+        <HelpTOCNode Title="Encode Method " Url="html/M_CodeX_Strings_Strings_Encode.htm" />
+        <HelpTOCNode Title="Fill Method " Url="html/M_CodeX_Strings_Strings_Fill.htm" />
+        <HelpTOCNode Id="08b72de7-cddb-4c54-9147-8477bdd472f7" Title="GetBytes Method " Url="html/Overload_CodeX_Strings_Strings_GetBytes.htm">
+          <HelpTOCNode Title="GetBytes Method (String)" Url="html/M_CodeX_Strings_Strings_GetBytes.htm" />
+          <HelpTOCNode Title="GetBytes Method (String, Encoding)" Url="html/M_CodeX_Strings_Strings_GetBytes_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="62998e2f-0d7d-4b7a-a717-4e2cea76c8c9" Title="GetString Method " Url="html/Overload_CodeX_Strings_Strings_GetString.htm">
+          <HelpTOCNode Title="GetString Method (Byte[])" Url="html/M_CodeX_Strings_Strings_GetString.htm" />
+          <HelpTOCNode Title="GetString Method (Byte[], Encoding)" Url="html/M_CodeX_Strings_Strings_GetString_2.htm" />
+          <HelpTOCNode Title="GetString Method (Byte[], Int32, Int32)" Url="html/M_CodeX_Strings_Strings_GetString_1.htm" />
+          <HelpTOCNode Title="GetString Method (Byte[], Encoding, Int32, Int32)" Url="html/M_CodeX_Strings_Strings_GetString_3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IsNullOrEmpty Method " Url="html/M_CodeX_Strings_Strings_IsNullOrEmpty.htm" />
+        <HelpTOCNode Title="IsNullOrWhiteSpace Method " Url="html/M_CodeX_Strings_Strings_IsNullOrWhiteSpace.htm" />
+        <HelpTOCNode Title="ToASCII Method " Url="html/M_CodeX_Strings_Strings_ToASCII.htm" />
+        <HelpTOCNode Id="51c86598-7022-41d1-be9f-b480200ac905" Title="ToBase64 Method " Url="html/Overload_CodeX_Strings_Strings_ToBase64.htm">
+          <HelpTOCNode Title="ToBase64 Method (String, Base64FormattingOptions)" Url="html/M_CodeX_Strings_Strings_ToBase64.htm" />
+          <HelpTOCNode Title="ToBase64 Method (String, Int32, Int32, Base64FormattingOptions)" Url="html/M_CodeX_Strings_Strings_ToBase64_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ToBigEndianUnicode Method " Url="html/M_CodeX_Strings_Strings_ToBigEndianUnicode.htm" />
+        <HelpTOCNode Title="ToUnicode Method " Url="html/M_CodeX_Strings_Strings_ToUnicode.htm" />
+        <HelpTOCNode Title="ToUTF32 Method " Url="html/M_CodeX_Strings_Strings_ToUTF32.htm" />
+        <HelpTOCNode Title="ToUTF7 Method " Url="html/M_CodeX_Strings_Strings_ToUTF7.htm" />
+        <HelpTOCNode Title="ToUTF8 Method " Url="html/M_CodeX_Strings_Strings_ToUTF8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

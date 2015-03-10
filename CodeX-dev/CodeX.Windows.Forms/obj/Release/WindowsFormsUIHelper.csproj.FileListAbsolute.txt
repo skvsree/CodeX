@@ -1,0 +1,9 @@
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Release\WindowsFormsUIHelper.csproj.GenerateResource.Cache
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Release\CodeX.Forms.RichForm.resources
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\bin\Release\CodeX.Forms.dll
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\bin\Release\CodeX.Forms.pdb
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Release\CodeX.Forms.dll
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Release\CodeX.Forms.pdb
+D:\Community\codeX\CodeX-dev\bin\Release\CodeX.Forms.dll
+D:\Community\codeX\CodeX-dev\bin\Release\CodeX.Forms.pdb
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Release\WindowsFormsUIHelper.csprojResolveAssemblyReference.cache

@@ -1,0 +1,48 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Encrypting Data</title>
+    <link rel="stylesheet" type="text/css" href="../Content/sunlight.default.css" />
+    <script src="../Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/sunlight-min.js" type="text/javascript"></script>
+    <script src="../Scripts/sunlight.csharp-min.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <table style="border: 1px black solid">
+        <tr><th>Normal Code</th><th>Code X</th></tr>
+        <tr>
+            <td>
+                <pre class="sunlight-highlight-csharp">
+          var algo = Rijndael.Create();
+            var deriveBytes = new Rfc2898DeriveBytes(sharedSecret, Encoding.UTF8.GetBytes(salt));
+            algo.Key = deriveBytes.GetBytes(algo.KeySize / 8);
+            ICryptoTransform encryptor = algo.CreateEncryptor(algo.Key, algo.IV);
+
+            using (var msEncrypt = new MemoryStream())
+            {
+                msEncrypt.Write(BitConverter.GetBytes(algo.IV.Length), 0, sizeof(int));
+                msEncrypt.Write(algo.IV, 0, algo.IV.Length);
+                using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                {
+                    using (var swEncrypt = new StreamWriter(csEncrypt))
+                    {
+                        swEncrypt.Write(s);
+                    }
+                }
+                return Convert.ToBase64String(msEncrypt.ToArray());
+            }
+    </pre>
+            </td>
+            <td>
+                <pre class="sunlight-highlight-csharp">
+testString.Encrypt("password")
+    </pre>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        Sunlight.highlightAll();
+    </script>
+</body>
+</html>

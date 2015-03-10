@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57428502-E2A8-4BB9-9CAA-387F322DC49A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeXDocumentation</RootNamespace>
+    <AssemblyName>CodeXDocumentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CloseSearch.png" />
+    <Content Include="CollapseAll.bmp" />
+    <Content Include="Collapsed.gif" />
+    <Content Include="ExpandAll.bmp" />
+    <Content Include="Expanded.gif" />
+    <Content Include="favicon.ico" />
+    <Content Include="FillNode.aspx" />
+    <Content Include="html\AllMembers_T_CodeX_Core_Core.htm" />
+    <Content Include="html\AllMembers_T_CodeX_Data_Data.htm" />
+    <Content Include="html\AllMembers_T_CodeX_Date_Date.htm" />
+    <Content Include="html\AllMembers_T_CodeX_IO_IO.htm" />
+    <Content Include="html\AllMembers_T_CodeX_Security.htm" />
+    <Content Include="html\AllMembers_T_CodeX_Strings_Strings.htm" />
+    <Content Include="html\Methods_T_CodeX_Core_Core.htm" />
+    <Content Include="html\Methods_T_CodeX_Data_Data.htm" />
+    <Content Include="html\Methods_T_CodeX_Date_Date.htm" />
+    <Content Include="html\Methods_T_CodeX_IO_IO.htm" />
+    <Content Include="html\Methods_T_CodeX_Security.htm" />
+    <Content Include="html\Methods_T_CodeX_Strings_Strings.htm" />
+    <Content Include="html\M_CodeX_Core_Core_CombineByteArrays.htm" />
+    <Content Include="html\M_CodeX_Core_Core_In__1.htm" />
+    <Content Include="html\M_CodeX_Core_Core_ToEnum__1.htm" />
+    <Content Include="html\M_CodeX_Data_Data_AddRange__2.htm" />
+    <Content Include="html\M_CodeX_Data_Data_AddRange__2_1.htm" />
+    <Content Include="html\M_CodeX_Data_Data_FindNextIndex__1.htm" />
+    <Content Include="html\M_CodeX_Data_Data_Match__1.htm" />
+    <Content Include="html\M_CodeX_Data_Data_Validate.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Apr.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Aug.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Dec.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Feb.htm" />
+    <Content Include="html\M_CodeX_Date_Date_IsLeapYear.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Jan.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Jul.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Jun.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Mar.htm" />
+    <Content Include="html\M_CodeX_Date_Date_May.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Nov.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Oct.htm" />
+    <Content Include="html\M_CodeX_Date_Date_Sep.htm" />
+    <Content Include="html\M_CodeX_Date_Date_ToDateTime.htm" />
+    <Content Include="html\M_CodeX_IO_IO_AddRange.htm" />
+    <Content Include="html\M_CodeX_IO_IO_AsFile.htm" />
+    <Content Include="html\M_CodeX_IO_IO_AsFolder.htm" />
+    <Content Include="html\M_CodeX_IO_IO_AsImage.htm" />
+    <Content Include="html\M_CodeX_IO_IO_AsImage_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_AsUri.htm" />
+    <Content Include="html\M_CodeX_IO_IO_EnumerateFiles.htm" />
+    <Content Include="html\M_CodeX_IO_IO_EnumerateFiles_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_GetFiles.htm" />
+    <Content Include="html\M_CodeX_IO_IO_GetFiles_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Lines.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Lines_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Lines_2.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Lines_3.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Sort.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Sort_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToBase64String.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToBase64String_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToBinary.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToDataTable.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToObject__1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToObject__1_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToStream.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToStream_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_ToXml__1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_Words.htm" />
+    <Content Include="html\M_CodeX_IO_IO_WriteToFile.htm" />
+    <Content Include="html\M_CodeX_IO_IO_WriteToFile_1.htm" />
+    <Content Include="html\M_CodeX_IO_IO_WriteToFile_2.htm" />
+    <Content Include="html\M_CodeX_IO_IO_WriteToFile_3.htm" />
+    <Content Include="html\M_CodeX_Security_Decrypt.htm" />
+    <Content Include="html\M_CodeX_Security_Encrypt.htm" />
+    <Content Include="html\M_CodeX_Security_Encrypt_1.htm" />
+    <Content Include="html\M_CodeX_Security_GeneratePassword.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_Encode.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_Fill.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_GetBytes.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_GetBytes_1.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_GetString.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_GetString_1.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_GetString_2.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_GetString_3.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_IsNullOrEmpty.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_IsNullOrWhiteSpace.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToASCII.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToBase64.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToBase64_1.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToBigEndianUnicode.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToUnicode.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToUTF32.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToUTF7.htm" />
+    <Content Include="html\M_CodeX_Strings_Strings_ToUTF8.htm" />
+    <Content Include="html\N_CodeX.htm" />
+    <Content Include="html\N_CodeX_Core.htm" />
+    <Content Include="html\N_CodeX_Data.htm" />
+    <Content Include="html\N_CodeX_Date.htm" />
+    <Content Include="html\N_CodeX_IO.htm" />
+    <Content Include="html\N_CodeX_Strings.htm" />
+    <Content Include="html\Overload_CodeX_Data_Data_AddRange.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_AsImage.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_EnumerateFiles.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_GetFiles.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_Lines.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_Sort.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_ToBase64String.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_ToObject.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_ToStream.htm" />
+    <Content Include="html\Overload_CodeX_IO_IO_WriteToFile.htm" />
+    <Content Include="html\Overload_CodeX_Security_Encrypt.htm" />
+    <Content Include="html\Overload_CodeX_Strings_Strings_GetBytes.htm" />
+    <Content Include="html\Overload_CodeX_Strings_Strings_GetString.htm" />
+    <Content Include="html\Overload_CodeX_Strings_Strings_ToBase64.htm" />
+    <Content Include="html\T_CodeX_Core_Core.htm" />
+    <Content Include="html\T_CodeX_Data_Data.htm" />
+    <Content Include="html\T_CodeX_Date_Date.htm" />
+    <Content Include="html\T_CodeX_IO_IO.htm" />
+    <Content Include="html\T_CodeX_Security.htm" />
+    <Content Include="html\T_CodeX_Strings_Strings.htm" />
+    <Content Include="icons\1_404_bullet.gif" />
+    <Content Include="icons\2_404_bullet.gif" />
+    <Content Include="icons\alert_caution.gif" />
+    <Content Include="icons\alert_note.gif" />
+    <Content Include="icons\alert_security.gif" />
+    <Content Include="icons\CFW.gif" />
+    <Content Include="icons\close.gif" />
+    <Content Include="icons\favicon.ico" />
+    <Content Include="icons\footer_slice.gif" />
+    <Content Include="icons\info_icon.gif" />
+    <Content Include="icons\note.gif" />
+    <Content Include="icons\online_icon.gif" />
+    <Content Include="icons\open.gif" />
+    <Content Include="icons\pencil.GIF" />
+    <Content Include="icons\privclass.gif" />
+    <Content Include="icons\privdelegate.gif" />
+    <Content Include="icons\privenumeration.gif" />
+    <Content Include="icons\privevent.gif" />
+    <Content Include="icons\privextension.gif" />
+    <Content Include="icons\privfield.gif" />
+    <Content Include="icons\privinterface.gif" />
+    <Content Include="icons\privmethod.gif" />
+    <Content Include="icons\privproperty.gif" />
+    <Content Include="icons\privstructure.gif" />
+    <Content Include="icons\protclass.gif" />
+    <Content Include="icons\protdelegate.gif" />
+    <Content Include="icons\protenumeration.gif" />
+    <Content Include="icons\protevent.gif" />
+    <Content Include="icons\protextension.gif" />
+    <Content Include="icons\protfield.gif" />
+    <Content Include="icons\protinterface.gif" />
+    <Content Include="icons\protmethod.gif" />
+    <Content Include="icons\protoperator.gif" />
+    <Content Include="icons\protproperty.gif" />
+    <Content Include="icons\protstructure.gif" />
+    <Content Include="icons\pubclass.gif" />
+    <Content Include="icons\pubdelegate.gif" />
+    <Content Include="icons\pubenumeration.gif" />
+    <Content Include="icons\pubevent.gif" />
+    <Content Include="icons\pubextension.gif" />
+    <Content Include="icons\pubfield.gif" />
+    <Content Include="icons\pubinterface.gif" />
+    <Content Include="icons\pubmethod.gif" />
+    <Content Include="icons\puboperator.gif" />
+    <Content Include="icons\pubproperty.gif" />
+    <Content Include="icons\pubstructure.gif" />
+    <Content Include="icons\search.gif" />
+    <Content Include="icons\search_bk.gif" />
+    <Content Include="icons\security.gif" />
+    <Content Include="icons\slMobile.gif" />
+    <Content Include="icons\static.gif" />
+    <Content Include="icons\tabLeftBG.gif" />
+    <Content Include="icons\tabRightBG.gif" />
+    <Content Include="icons\ui_om_collapse.gif" />
+    <Content Include="icons\ui_om_expand.gif" />
+    <Content Include="icons\xna.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index.gif" />
+    <Content Include="Index.html" />
+    <Content Include="Item.gif" />
+    <Content Include="LoadIndexKeywords.aspx" />
+    <Content Include="LoadIndexKeywords.php" />
+    <Content Include="scripts\branding.js" />
+    <Content Include="scripts\highlight.js" />
+    <Content Include="Search.gif" />
+    <Content Include="SearchHelp.aspx" />
+    <Content Include="SearchHelp.inc.php" />
+    <Content Include="SearchHelp.php" />
+    <Content Include="Splitter.gif" />
+    <Content Include="styles\branding-cs-CZ.css" />
+    <Content Include="styles\branding-de-DE.css" />
+    <Content Include="styles\branding-en-US.css" />
+    <Content Include="styles\branding-es-ES.css" />
+    <Content Include="styles\branding-fr-FR.css" />
+    <Content Include="styles\branding-it-IT.css" />
+    <Content Include="styles\branding-ja-JP.css" />
+    <Content Include="styles\branding-ko-KR.css" />
+    <Content Include="styles\branding-pl-PL.css" />
+    <Content Include="styles\branding-pt-BR.css" />
+    <Content Include="styles\branding-ru-RU.css" />
+    <Content Include="styles\branding-tr-TR.css" />
+    <Content Include="styles\branding-zh-CN.css" />
+    <Content Include="styles\branding-zh-TW.css" />
+    <Content Include="styles\branding.css" />
+    <Content Include="styles\highlight.css" />
+    <Content Include="SyncTOC.gif" />
+    <Content Include="TOC.css" />
+    <Content Include="TOC.js" />
+    <Content Include="Web.config" />
+    <Content Include="WebKI.xml" />
+    <Content Include="WebTOC.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fti\FTI_100.json" />
+    <Content Include="fti\FTI_101.json" />
+    <Content Include="fti\FTI_102.json" />
+    <Content Include="fti\FTI_103.json" />
+    <Content Include="fti\FTI_104.json" />
+    <Content Include="fti\FTI_105.json" />
+    <Content Include="fti\FTI_106.json" />
+    <Content Include="fti\FTI_107.json" />
+    <Content Include="fti\FTI_108.json" />
+    <Content Include="fti\FTI_109.json" />
+    <Content Include="fti\FTI_110.json" />
+    <Content Include="fti\FTI_111.json" />
+    <Content Include="fti\FTI_112.json" />
+    <Content Include="fti\FTI_114.json" />
+    <Content Include="fti\FTI_115.json" />
+    <Content Include="fti\FTI_116.json" />
+    <Content Include="fti\FTI_117.json" />
+    <Content Include="fti\FTI_118.json" />
+    <Content Include="fti\FTI_119.json" />
+    <Content Include="fti\FTI_120.json" />
+    <Content Include="fti\FTI_121.json" />
+    <Content Include="fti\FTI_95.json" />
+    <Content Include="fti\FTI_97.json" />
+    <Content Include="fti\FTI_98.json" />
+    <Content Include="fti\FTI_99.json" />
+    <Content Include="fti\FTI_Files.json" />
+    <Content Include="LastBuild.log" />
+    <None Include="Properties\PublishProfiles\codeXdoc - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\codeXdoc - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13269</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26098/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddRange method">
+    <HelpKINode Title="Data.AddRange Method " Url="html/Overload_CodeX_Data_Data_AddRange.htm" />
+    <HelpKINode Title="IO.AddRange Method " Url="html/M_CodeX_IO_IO_AddRange.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apr method" Url="html/M_CodeX_Date_Date_Apr.htm" />
+  <HelpKINode Title="AsFile method" Url="html/M_CodeX_IO_IO_AsFile.htm" />
+  <HelpKINode Title="AsFolder method" Url="html/M_CodeX_IO_IO_AsFolder.htm" />
+  <HelpKINode Title="AsImage method" Url="html/Overload_CodeX_IO_IO_AsImage.htm" />
+  <HelpKINode Title="AsString method" Url="html/M_CodeX_Core_Core_AsString.htm" />
+  <HelpKINode Title="AsUri method" Url="html/M_CodeX_IO_IO_AsUri.htm" />
+  <HelpKINode Title="Aug method" Url="html/M_CodeX_Date_Date_Aug.htm" />
+  <HelpKINode Title="CodeX namespace" Url="html/N_CodeX.htm" />
+  <HelpKINode Title="CodeX.Configuration namespace" Url="html/N_CodeX_Configuration.htm" />
+  <HelpKINode Title="CodeX.Configuration.Configuration class">
+    <HelpKINode Title="Configuration Class" Url="html/T_CodeX_Configuration_Configuration.htm" />
+    <HelpKINode Title="Configuration Members" Url="html/AllMembers_T_CodeX_Configuration_Configuration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CodeX.Core namespace" Url="html/N_CodeX_Core.htm" />
+  <HelpKINode Title="CodeX.Core.Core class">
+    <HelpKINode Title="Core Class" Url="html/T_CodeX_Core_Core.htm" />
+    <HelpKINode Title="Core Members" Url="html/AllMembers_T_CodeX_Core_Core.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CodeX.Data namespace" Url="html/N_CodeX_Data.htm" />
+  <HelpKINode Title="CodeX.Data.Data class">
+    <HelpKINode Title="Data Class" Url="html/T_CodeX_Data_Data.htm" />
+    <HelpKINode Title="Data Members" Url="html/AllMembers_T_CodeX_Data_Data.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CodeX.Date namespace" Url="html/N_CodeX_Date.htm" />
+  <HelpKINode Title="CodeX.Date.Date class">
+    <HelpKINode Title="Date Class" Url="html/T_CodeX_Date_Date.htm" />
+    <HelpKINode Title="Date Members" Url="html/AllMembers_T_CodeX_Date_Date.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CodeX.IO namespace" Url="html/N_CodeX_IO.htm" />
+  <HelpKINode Title="CodeX.IO.IO class">
+    <HelpKINode Title="IO Class" Url="html/T_CodeX_IO_IO.htm" />
+    <HelpKINode Title="IO Members" Url="html/AllMembers_T_CodeX_IO_IO.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CodeX.Security class">
+    <HelpKINode Title="Security Class" Url="html/T_CodeX_Security.htm" />
+    <HelpKINode Title="Security Members" Url="html/AllMembers_T_CodeX_Security.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CodeX.Strings namespace" Url="html/N_CodeX_Strings.htm" />
+  <HelpKINode Title="CodeX.Strings.Strings class">
+    <HelpKINode Title="Strings Class" Url="html/T_CodeX_Strings_Strings.htm" />
+    <HelpKINode Title="Strings Members" Url="html/AllMembers_T_CodeX_Strings_Strings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CombineByteArrays method" Url="html/M_CodeX_Core_Core_CombineByteArrays.htm" />
+  <HelpKINode Title="Configuration class">
+    <HelpKINode Title="Configuration Class" Url="html/T_CodeX_Configuration_Configuration.htm" />
+    <HelpKINode Title="Configuration Members" Url="html/AllMembers_T_CodeX_Configuration_Configuration.htm" />
+    <HelpKINode Title="about Configuration class" Url="html/T_CodeX_Configuration_Configuration.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_Configuration_Configuration.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_Configuration_Configuration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Configuration.GetConnectionString method" Url="html/M_CodeX_Configuration_Configuration_GetConnectionString.htm" />
+  <HelpKINode Title="Configuration.GetSettings method" Url="html/M_CodeX_Configuration_Configuration_GetSettings.htm" />
+  <HelpKINode Title="Core class">
+    <HelpKINode Title="Core Class" Url="html/T_CodeX_Core_Core.htm" />
+    <HelpKINode Title="Core Members" Url="html/AllMembers_T_CodeX_Core_Core.htm" />
+    <HelpKINode Title="about Core class" Url="html/T_CodeX_Core_Core.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_Core_Core.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_Core_Core.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Core.AsString method" Url="html/M_CodeX_Core_Core_AsString.htm" />
+  <HelpKINode Title="Core.CombineByteArrays method" Url="html/M_CodeX_Core_Core_CombineByteArrays.htm" />
+  <HelpKINode Title="Core.In(Of T) method" Url="html/M_CodeX_Core_Core_In__1.htm" />
+  <HelpKINode Title="Core.In&lt;T&gt; method" Url="html/M_CodeX_Core_Core_In__1.htm" />
+  <HelpKINode Title="Core.ToEnum(Of T) method" Url="html/M_CodeX_Core_Core_ToEnum__1.htm" />
+  <HelpKINode Title="Core.ToEnum&lt;T&gt; method" Url="html/M_CodeX_Core_Core_ToEnum__1.htm" />
+  <HelpKINode Title="Data class">
+    <HelpKINode Title="Data Class" Url="html/T_CodeX_Data_Data.htm" />
+    <HelpKINode Title="Data Members" Url="html/AllMembers_T_CodeX_Data_Data.htm" />
+    <HelpKINode Title="about Data class" Url="html/T_CodeX_Data_Data.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_Data_Data.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_Data_Data.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Data.AddRange method" Url="html/Overload_CodeX_Data_Data_AddRange.htm" />
+  <HelpKINode Title="Data.FindNextIndex(Of T) method" Url="html/M_CodeX_Data_Data_FindNextIndex__1.htm" />
+  <HelpKINode Title="Data.FindNextIndex&lt;T&gt; method" Url="html/M_CodeX_Data_Data_FindNextIndex__1.htm" />
+  <HelpKINode Title="Data.Match(Of T) method" Url="html/M_CodeX_Data_Data_Match__1.htm" />
+  <HelpKINode Title="Data.Match&lt;T&gt; method" Url="html/M_CodeX_Data_Data_Match__1.htm" />
+  <HelpKINode Title="Data.Validate method" Url="html/M_CodeX_Data_Data_Validate.htm" />
+  <HelpKINode Title="Date class">
+    <HelpKINode Title="Date Class" Url="html/T_CodeX_Date_Date.htm" />
+    <HelpKINode Title="Date Members" Url="html/AllMembers_T_CodeX_Date_Date.htm" />
+    <HelpKINode Title="about Date class" Url="html/T_CodeX_Date_Date.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_Date_Date.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_Date_Date.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Date.Apr method" Url="html/M_CodeX_Date_Date_Apr.htm" />
+  <HelpKINode Title="Date.Aug method" Url="html/M_CodeX_Date_Date_Aug.htm" />
+  <HelpKINode Title="Date.Dec method" Url="html/M_CodeX_Date_Date_Dec.htm" />
+  <HelpKINode Title="Date.Feb method" Url="html/M_CodeX_Date_Date_Feb.htm" />
+  <HelpKINode Title="Date.IsLeapYear method" Url="html/M_CodeX_Date_Date_IsLeapYear.htm" />
+  <HelpKINode Title="Date.Jan method" Url="html/M_CodeX_Date_Date_Jan.htm" />
+  <HelpKINode Title="Date.Jul method" Url="html/M_CodeX_Date_Date_Jul.htm" />
+  <HelpKINode Title="Date.Jun method" Url="html/M_CodeX_Date_Date_Jun.htm" />
+  <HelpKINode Title="Date.Mar method" Url="html/M_CodeX_Date_Date_Mar.htm" />
+  <HelpKINode Title="Date.May method" Url="html/M_CodeX_Date_Date_May.htm" />
+  <HelpKINode Title="Date.Nov method" Url="html/M_CodeX_Date_Date_Nov.htm" />
+  <HelpKINode Title="Date.Oct method" Url="html/M_CodeX_Date_Date_Oct.htm" />
+  <HelpKINode Title="Date.Sep method" Url="html/M_CodeX_Date_Date_Sep.htm" />
+  <HelpKINode Title="Date.ToDateTime method" Url="html/M_CodeX_Date_Date_ToDateTime.htm" />
+  <HelpKINode Title="Dec method" Url="html/M_CodeX_Date_Date_Dec.htm" />
+  <HelpKINode Title="Decrypt method" Url="html/M_CodeX_Security_Decrypt.htm" />
+  <HelpKINode Title="Encode method" Url="html/M_CodeX_Strings_Strings_Encode.htm" />
+  <HelpKINode Title="Encrypt method" Url="html/Overload_CodeX_Security_Encrypt.htm" />
+  <HelpKINode Title="EnumerateFiles method" Url="html/Overload_CodeX_IO_IO_EnumerateFiles.htm" />
+  <HelpKINode Title="Feb method" Url="html/M_CodeX_Date_Date_Feb.htm" />
+  <HelpKINode Title="Fill method" Url="html/M_CodeX_Strings_Strings_Fill.htm" />
+  <HelpKINode Title="FindNextIndex(Of T) method" Url="html/M_CodeX_Data_Data_FindNextIndex__1.htm" />
+  <HelpKINode Title="FindNextIndex&lt;T&gt; method" Url="html/M_CodeX_Data_Data_FindNextIndex__1.htm" />
+  <HelpKINode Title="GeneratePassword method" Url="html/M_CodeX_Security_GeneratePassword.htm" />
+  <HelpKINode Title="GetBytes method" Url="html/Overload_CodeX_Strings_Strings_GetBytes.htm" />
+  <HelpKINode Title="GetConnectionString method" Url="html/M_CodeX_Configuration_Configuration_GetConnectionString.htm" />
+  <HelpKINode Title="GetFiles method" Url="html/Overload_CodeX_IO_IO_GetFiles.htm" />
+  <HelpKINode Title="GetSettings method" Url="html/M_CodeX_Configuration_Configuration_GetSettings.htm" />
+  <HelpKINode Title="GetString method" Url="html/Overload_CodeX_Strings_Strings_GetString.htm" />
+  <HelpKINode Title="In(Of T) method" Url="html/M_CodeX_Core_Core_In__1.htm" />
+  <HelpKINode Title="In&lt;T&gt; method" Url="html/M_CodeX_Core_Core_In__1.htm" />
+  <HelpKINode Title="IO class">
+    <HelpKINode Title="IO Class" Url="html/T_CodeX_IO_IO.htm" />
+    <HelpKINode Title="IO Members" Url="html/AllMembers_T_CodeX_IO_IO.htm" />
+    <HelpKINode Title="about IO class" Url="html/T_CodeX_IO_IO.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_IO_IO.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_IO_IO.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IO.AddRange method" Url="html/M_CodeX_IO_IO_AddRange.htm" />
+  <HelpKINode Title="IO.AsFile method" Url="html/M_CodeX_IO_IO_AsFile.htm" />
+  <HelpKINode Title="IO.AsFolder method" Url="html/M_CodeX_IO_IO_AsFolder.htm" />
+  <HelpKINode Title="IO.AsImage method" Url="html/Overload_CodeX_IO_IO_AsImage.htm" />
+  <HelpKINode Title="IO.AsUri method" Url="html/M_CodeX_IO_IO_AsUri.htm" />
+  <HelpKINode Title="IO.EnumerateFiles method" Url="html/Overload_CodeX_IO_IO_EnumerateFiles.htm" />
+  <HelpKINode Title="IO.GetFiles method" Url="html/Overload_CodeX_IO_IO_GetFiles.htm" />
+  <HelpKINode Title="IO.Lines method" Url="html/Overload_CodeX_IO_IO_Lines.htm" />
+  <HelpKINode Title="IO.ReadAsText method" Url="html/Overload_CodeX_IO_IO_ReadAsText.htm" />
+  <HelpKINode Title="IO.Sort method" Url="html/Overload_CodeX_IO_IO_Sort.htm" />
+  <HelpKINode Title="IO.ToBase64String method" Url="html/Overload_CodeX_IO_IO_ToBase64String.htm" />
+  <HelpKINode Title="IO.ToBinary method" Url="html/M_CodeX_IO_IO_ToBinary.htm" />
+  <HelpKINode Title="IO.ToDataTable method" Url="html/M_CodeX_IO_IO_ToDataTable.htm" />
+  <HelpKINode Title="IO.ToObject method" Url="html/Overload_CodeX_IO_IO_ToObject.htm" />
+  <HelpKINode Title="IO.ToStream method" Url="html/Overload_CodeX_IO_IO_ToStream.htm" />
+  <HelpKINode Title="IO.ToXml(Of T) method" Url="html/M_CodeX_IO_IO_ToXml__1.htm" />
+  <HelpKINode Title="IO.ToXml&lt;T&gt; method" Url="html/M_CodeX_IO_IO_ToXml__1.htm" />
+  <HelpKINode Title="IO.Words method" Url="html/M_CodeX_IO_IO_Words.htm" />
+  <HelpKINode Title="IO.WriteText method" Url="html/Overload_CodeX_IO_IO_WriteText.htm" />
+  <HelpKINode Title="IO.WriteToFile method" Url="html/Overload_CodeX_IO_IO_WriteToFile.htm" />
+  <HelpKINode Title="IsLeapYear method" Url="html/M_CodeX_Date_Date_IsLeapYear.htm" />
+  <HelpKINode Title="IsNullOrEmpty method" Url="html/M_CodeX_Strings_Strings_IsNullOrEmpty.htm" />
+  <HelpKINode Title="IsNullOrWhiteSpace method" Url="html/M_CodeX_Strings_Strings_IsNullOrWhiteSpace.htm" />
+  <HelpKINode Title="Jan method" Url="html/M_CodeX_Date_Date_Jan.htm" />
+  <HelpKINode Title="Jul method" Url="html/M_CodeX_Date_Date_Jul.htm" />
+  <HelpKINode Title="Jun method" Url="html/M_CodeX_Date_Date_Jun.htm" />
+  <HelpKINode Title="Lines method" Url="html/Overload_CodeX_IO_IO_Lines.htm" />
+  <HelpKINode Title="Mar method" Url="html/M_CodeX_Date_Date_Mar.htm" />
+  <HelpKINode Title="Match(Of T) method" Url="html/M_CodeX_Data_Data_Match__1.htm" />
+  <HelpKINode Title="Match&lt;T&gt; method" Url="html/M_CodeX_Data_Data_Match__1.htm" />
+  <HelpKINode Title="May method" Url="html/M_CodeX_Date_Date_May.htm" />
+  <HelpKINode Title="Nov method" Url="html/M_CodeX_Date_Date_Nov.htm" />
+  <HelpKINode Title="Oct method" Url="html/M_CodeX_Date_Date_Oct.htm" />
+  <HelpKINode Title="ReadAsText method" Url="html/Overload_CodeX_IO_IO_ReadAsText.htm" />
+  <HelpKINode Title="Security class">
+    <HelpKINode Title="Security Class" Url="html/T_CodeX_Security.htm" />
+    <HelpKINode Title="Security Members" Url="html/AllMembers_T_CodeX_Security.htm" />
+    <HelpKINode Title="about Security class" Url="html/T_CodeX_Security.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_Security.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_Security.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Security.Decrypt method" Url="html/M_CodeX_Security_Decrypt.htm" />
+  <HelpKINode Title="Security.Encrypt method" Url="html/Overload_CodeX_Security_Encrypt.htm" />
+  <HelpKINode Title="Security.GeneratePassword method" Url="html/M_CodeX_Security_GeneratePassword.htm" />
+  <HelpKINode Title="Sep method" Url="html/M_CodeX_Date_Date_Sep.htm" />
+  <HelpKINode Title="Sort method" Url="html/Overload_CodeX_IO_IO_Sort.htm" />
+  <HelpKINode Title="Strings class">
+    <HelpKINode Title="Strings Class" Url="html/T_CodeX_Strings_Strings.htm" />
+    <HelpKINode Title="Strings Members" Url="html/AllMembers_T_CodeX_Strings_Strings.htm" />
+    <HelpKINode Title="about Strings class" Url="html/T_CodeX_Strings_Strings.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_CodeX_Strings_Strings.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CodeX_Strings_Strings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Strings.Encode method" Url="html/M_CodeX_Strings_Strings_Encode.htm" />
+  <HelpKINode Title="Strings.Fill method" Url="html/M_CodeX_Strings_Strings_Fill.htm" />
+  <HelpKINode Title="Strings.GetBytes method" Url="html/Overload_CodeX_Strings_Strings_GetBytes.htm" />
+  <HelpKINode Title="Strings.GetString method" Url="html/Overload_CodeX_Strings_Strings_GetString.htm" />
+  <HelpKINode Title="Strings.IsNullOrEmpty method" Url="html/M_CodeX_Strings_Strings_IsNullOrEmpty.htm" />
+  <HelpKINode Title="Strings.IsNullOrWhiteSpace method" Url="html/M_CodeX_Strings_Strings_IsNullOrWhiteSpace.htm" />
+  <HelpKINode Title="Strings.ToASCII method" Url="html/M_CodeX_Strings_Strings_ToASCII.htm" />
+  <HelpKINode Title="Strings.ToBase64 method" Url="html/Overload_CodeX_Strings_Strings_ToBase64.htm" />
+  <HelpKINode Title="Strings.ToBigEndianUnicode method" Url="html/M_CodeX_Strings_Strings_ToBigEndianUnicode.htm" />
+  <HelpKINode Title="Strings.ToUnicode method" Url="html/M_CodeX_Strings_Strings_ToUnicode.htm" />
+  <HelpKINode Title="Strings.ToUTF32 method" Url="html/M_CodeX_Strings_Strings_ToUTF32.htm" />
+  <HelpKINode Title="Strings.ToUTF7 method" Url="html/M_CodeX_Strings_Strings_ToUTF7.htm" />
+  <HelpKINode Title="Strings.ToUTF8 method" Url="html/M_CodeX_Strings_Strings_ToUTF8.htm" />
+  <HelpKINode Title="ToASCII method" Url="html/M_CodeX_Strings_Strings_ToASCII.htm" />
+  <HelpKINode Title="ToBase64 method" Url="html/Overload_CodeX_Strings_Strings_ToBase64.htm" />
+  <HelpKINode Title="ToBase64String method" Url="html/Overload_CodeX_IO_IO_ToBase64String.htm" />
+  <HelpKINode Title="ToBigEndianUnicode method" Url="html/M_CodeX_Strings_Strings_ToBigEndianUnicode.htm" />
+  <HelpKINode Title="ToBinary method" Url="html/M_CodeX_IO_IO_ToBinary.htm" />
+  <HelpKINode Title="ToDataTable method" Url="html/M_CodeX_IO_IO_ToDataTable.htm" />
+  <HelpKINode Title="ToDateTime method" Url="html/M_CodeX_Date_Date_ToDateTime.htm" />
+  <HelpKINode Title="ToEnum(Of T) method" Url="html/M_CodeX_Core_Core_ToEnum__1.htm" />
+  <HelpKINode Title="ToEnum&lt;T&gt; method" Url="html/M_CodeX_Core_Core_ToEnum__1.htm" />
+  <HelpKINode Title="ToObject method" Url="html/Overload_CodeX_IO_IO_ToObject.htm" />
+  <HelpKINode Title="ToStream method" Url="html/Overload_CodeX_IO_IO_ToStream.htm" />
+  <HelpKINode Title="ToUnicode method" Url="html/M_CodeX_Strings_Strings_ToUnicode.htm" />
+  <HelpKINode Title="ToUTF32 method" Url="html/M_CodeX_Strings_Strings_ToUTF32.htm" />
+  <HelpKINode Title="ToUTF7 method" Url="html/M_CodeX_Strings_Strings_ToUTF7.htm" />
+  <HelpKINode Title="ToUTF8 method" Url="html/M_CodeX_Strings_Strings_ToUTF8.htm" />
+  <HelpKINode Title="ToXml(Of T) method" Url="html/M_CodeX_IO_IO_ToXml__1.htm" />
+  <HelpKINode Title="ToXml&lt;T&gt; method" Url="html/M_CodeX_IO_IO_ToXml__1.htm" />
+  <HelpKINode Title="Validate method" Url="html/M_CodeX_Data_Data_Validate.htm" />
+  <HelpKINode Title="Words method" Url="html/M_CodeX_IO_IO_Words.htm" />
+  <HelpKINode Title="WriteText method" Url="html/Overload_CodeX_IO_IO_WriteText.htm" />
+  <HelpKINode Title="WriteToFile method" Url="html/Overload_CodeX_IO_IO_WriteToFile.htm" />
+</HelpKI>

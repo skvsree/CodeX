@@ -1,0 +1,5 @@
+D:\Community\codeX\CodeX-dev\dotnetHelper\bin\Debug\dotnetHelper.dll
+D:\Community\codeX\CodeX-dev\dotnetHelper\bin\Debug\dotnetHelper.pdb
+D:\Community\codeX\CodeX-dev\dotnetHelper\obj\Debug\dotnetHelper.csprojResolveAssemblyReference.cache
+D:\Community\codeX\CodeX-dev\dotnetHelper\obj\Debug\dotnetHelper.dll
+D:\Community\codeX\CodeX-dev\dotnetHelper\obj\Debug\dotnetHelper.pdb

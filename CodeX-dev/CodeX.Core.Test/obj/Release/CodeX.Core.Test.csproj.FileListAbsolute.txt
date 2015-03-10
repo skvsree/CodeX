@@ -1,0 +1,13 @@
+D:\Community\codeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.Core.Test.dll
+D:\Community\codeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.Core.Test.pdb
+D:\Community\codeX\CodeX-dev\CodeX.Core.Test\obj\Release\CodeX.Core.Test.csprojResolveAssemblyReference.cache
+D:\Community\codeX\CodeX-dev\CodeX.Core.Test\obj\Release\CodeX.Core.Test.dll
+D:\Community\codeX\CodeX-dev\CodeX.Core.Test\obj\Release\CodeX.Core.Test.pdb
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.Core.Test.dll
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.Core.Test.pdb
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.dll
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.pdb
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\bin\Release\CodeX.xml
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\obj\Release\CodeX.Core.Test.csprojResolveAssemblyReference.cache
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\obj\Release\CodeX.Core.Test.dll
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core.Test\obj\Release\CodeX.Core.Test.pdb

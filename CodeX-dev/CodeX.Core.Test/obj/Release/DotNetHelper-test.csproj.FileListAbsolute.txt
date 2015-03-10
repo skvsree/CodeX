@@ -1,0 +1,8 @@
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\obj\Release\DotNetHelper-test.csprojResolveAssemblyReference.cache
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\bin\Release\DotNetHelper-test.dll
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\bin\Release\DotNetHelper-test.pdb
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\obj\Release\DotNetHelper-test.dll
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\obj\Release\DotNetHelper-test.pdb
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\bin\Release\CodeX.dll
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\bin\Release\CodeX.pdb
+D:\Community\codeX\CodeX-dev\DotNetHelper-test\bin\Release\CodeX.xml

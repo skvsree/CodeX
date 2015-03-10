@@ -1,0 +1,9 @@
+D:\Community\codeX\CodeX-dev\dotnetHelper\bin\Release\CodeX.xml
+D:\Community\codeX\CodeX-dev\dotnetHelper\bin\Release\CodeX.dll
+D:\Community\codeX\CodeX-dev\dotnetHelper\bin\Release\CodeX.pdb
+D:\Community\codeX\CodeX-dev\dotnetHelper\obj\Release\CodeX.dll
+D:\Community\codeX\CodeX-dev\dotnetHelper\obj\Release\CodeX.pdb
+D:\Community\codeX\CodeX-dev\bin\Release\CodeX.dll
+D:\Community\codeX\CodeX-dev\bin\Release\CodeX.pdb
+D:\Community\codeX\CodeX-dev\bin\Release\CodeX.xml
+D:\Community\codeX\CodeX-dev\dotnetHelper\obj\Release\dotnetHelper.csprojResolveAssemblyReference.cache

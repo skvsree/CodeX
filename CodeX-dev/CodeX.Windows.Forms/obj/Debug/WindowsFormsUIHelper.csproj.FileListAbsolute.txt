@@ -1,0 +1,5 @@
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\bin\Debug\WindowsFormsUIHelper.dll
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\bin\Debug\WindowsFormsUIHelper.pdb
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Debug\WindowsFormsUIHelper.csprojResolveAssemblyReference.cache
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Debug\WindowsFormsUIHelper.dll
+D:\Community\codeX\CodeX-dev\WindowsFormsUIHelper\obj\Debug\WindowsFormsUIHelper.pdb

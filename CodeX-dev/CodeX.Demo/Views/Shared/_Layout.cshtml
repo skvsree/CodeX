@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Code Extensions</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")       
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/jquery-ui-1.9.2.min.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery.ui.metro.js" type="text/javascript" ></script>
+        <script src="~/Scripts/sunlight-all-min.js" type="text/javascript"></script>
+        <link href="~/Content/jquery.ui.metro.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/sunlight.default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <div class="site-title"><img src="~/Images/Logo.jpg" alt="Code Extensions" /><div style="color:yellow"> &nbsp; &nbsp; &nbsp;Code less do more</div></div>
+                </div>
+             </div>
+        </header>
+        <div id="body">
+              <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+    </body>
+</html>

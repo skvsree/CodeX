@@ -1,0 +1,12 @@
+D:\Community\codeX\CodeX-dev\CodeX.Core\bin\Debug\CodeX.XML
+D:\Community\codeX\CodeX-dev\CodeX.Core\bin\Debug\CodeX.dll
+D:\Community\codeX\CodeX-dev\CodeX.Core\bin\Debug\CodeX.pdb
+D:\Community\codeX\CodeX-dev\CodeX.Core\obj\Debug\CodeX.dll
+D:\Community\codeX\CodeX-dev\CodeX.Core\obj\Debug\CodeX.pdb
+d:\Community\codeX\CodeX-dev\CodeX.Core\obj\Debug\CodeX.Core.csprojResolveAssemblyReference.cache
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core\bin\Debug\CodeX.XML
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core\bin\Debug\CodeX.dll
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core\bin\Debug\CodeX.pdb
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core\obj\Debug\CodeX.Core.csprojResolveAssemblyReference.cache
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core\obj\Debug\CodeX.dll
+D:\Community\github\CodeX\CodeX-dev\CodeX.Core\obj\Debug\CodeX.pdb

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Site.css" rel="Stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+            color: red;
+            background-color: #FFFFFF;
+        }
+        .auto-style2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td style="border-right: dotted">
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white;">&nbsp;&nbsp;
+<span style="color: blue;">            var</span>&nbsp;xmlSerializer&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span
+    style="color: #2b91af;">XmlSerializer</span>(<span style="color: blue;">typeof</span>(<span 
+        class="style1" style="color: #2b91af;">Person</span>));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">var</span>&nbsp;stringWriter&nbsp;=&nbsp;<span
+    style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">StringWriter</span>();
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">var</span>&nbsp;ns&nbsp;=&nbsp;<span
+    style="color: blue;">new</span>&nbsp;<span style="color: #2b91af;">XmlSerializerNamespaces</span>();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ns.Add(<span
+    style="color: #a31515;">&quot;&quot;</span>,&nbsp;<span style="color: #a31515;">&quot;&quot;</span>);
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">using</span>&nbsp;(<span
+    style="color: #2b91af;">XmlWriter</span>&nbsp;xmlWriter&nbsp;=&nbsp;<span style="color: blue;">new</span>&nbsp;<span
+        style="color: #2b91af;">XmlTextWriterFormattedNoDeclaration</span>(stringWriter,&nbsp;indented))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlSerializer.Serialize(xmlWriter,&nbsp;o,&nbsp;ns);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">return</span>&nbsp;stringWriter.ToString();</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white;">
+&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white;">
+&nbsp;</pre>
+                <pre style="background-position: 0% 0%; font-family: Consolas; font-size: 13; background-image: none; background-repeat: repeat; background-attachment: scroll;" class="auto-style1">
+Total Number of lines needed : 9</pre>
+            </td>
+            <td>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">person.ToXml&lt;<span style="color: #2b91af;">Person</span>&gt;();</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;</pre>
+                <pre style="font-family: Consolas; font-size: 13; color: black; background: white; margin-left: 80px;">&nbsp;<span class="auto-style2">Total Number of lines needed : 1</span></pre>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
