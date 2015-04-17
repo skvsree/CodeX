@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeX</name>
+    </assembly>
+    <members>
+        <member name="T:CodeX.AOP.Deputy`1">
+            <summary>
+            Deputy Class
+            </summary>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CodeX.AOP.Deputy`1"/> class.
+            </summary>
+            <param name="instance">The instance.</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.Create(`0)">
+            <summary>
+            Creates the specified instance.
+            </summary>
+            <param name="instance">The instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.Invoke(System.Runtime.Remoting.Messaging.IMessage)">
+            <summary>
+            When overridden in a derived class, invokes the method that is specified in the provided <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> on the remote object that is represented by the current instance.
+            </summary>
+            <param name="msg">A <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> that contains a <see cref="T:System.Collections.IDictionary" /> of information about the method call.</param>
+            <returns>
+            The message returned by the invoked method, containing the return value and any out or ref parameters.
+            </returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="Infrastructure" />
+              </PermissionSet>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.DoPreProcessors(System.Reflection.MethodInfo,System.Object[])">
+            <summary>
+            Does the pre-processors.
+            </summary>
+            <param name="mi">The minimum.</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.DoPostProcessors(System.Reflection.MethodInfo,System.Object[])">
+            <summary>
+            Does the post processors.
+            </summary>
+            <param name="mi">The minimum.</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.DoPreProcessorForMethod(System.Reflection.MethodInfo,System.Object[])">
+            <summary>
+            Does the pre-processor for method.
+            </summary>
+            <param name="mi">The minimum.</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.DoPostProcessorForMethod(System.Reflection.MethodInfo,System.Object[])">
+            <summary>
+            Does the post processor for method.
+            </summary>
+            <param name="mi">The minimum.</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.DoPreProcessorForProperty(System.Reflection.PropertyInfo,System.Object[],System.Boolean)">
+            <summary>
+            Does the pre-processor for property.
+            </summary>
+            <param name="pi">The pi.</param>
+            <param name="isget">if set to <c>true</c> [isget].</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.DoPostProcessorForProperty(System.Reflection.PropertyInfo,System.Object[],System.Boolean)">
+            <summary>
+            Does the post processor for property.
+            </summary>
+            <param name="pi">The pi.</param>
+            <param name="isget">if set to <c>true</c> [isget].</param>
+        </member>
+        <member name="M:CodeX.AOP.Deputy`1.GetMethodProperty(System.Reflection.MethodInfo,System.Object,System.Boolean@)">
+            <summary>
+            Gets the method property.
+            </summary>
+            <param name="methodInfo">The method information.</param>
+            <param name="owner">The owner.</param>
+            <param name="IsGet">if set to <c>true</c> [is get].</param>
+            <returns></returns>
+        </member>
+        <member name="T:CodeX.AOP.IAOP">
+            <summary>
+            Aspect Orianted Programming Interface
+            </summary>
+        </member>
+        <member name="T:CodeX.Configuration.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CodeX.Configuration.Configuration.GetSettings(System.String)">
+            <summary>
+            Gets the app settings value.
+            </summary>
+            <param name="settingsKey">The settings key.</param>
+            <returns>Value of the setting</returns>
+            <example><code>
+            var logPath = "LogFilePath".GetSettings();
+            </code></example>
+        </member>
+        <member name="M:CodeX.Configuration.Configuration.GetConnectionString(System.String)">
+            <summary>
+            Gets the connection string.
+            </summary>
+            <param name="configurationName">Name of the configuration.</param>
+            <returns>Connection String</returns>
+            <example><code>
+            var connectionString = "DataConnection".GetConnectionString();
+            </code></example>
+        </member>
+        <member name="T:CodeX.Data.Data">
+            <summary>
+            Contains code Extensions for DataBase and Data structure
+            </summary>
+        </member>
+        <member name="M:CodeX.Data.Data.Validate(System.Object)">
+            <summary>
+            Validates the object.
+            </summary>
+            <param name="o">Dynamic Object</param>
+            <returns>
+            Validation results
+            </returns>
+            <example><code> 
+            public class Person
+            {
+               [Range(5, 50)]
+               public int Age { get; set; }
+               public string Name { get; set; }
+            }
+            Person p = new Person{Age = 30, Name = "Stark"};
+            p.Validate();
+            </code></example>
+        </member>
+        <member name="M:CodeX.Data.Data.Validate(System.Object,System.Object,System.String)">
+            <summary>
+            Validates the specified Property of the given object.
+            </summary>
+            <param name="o">Object</param>
+            <param name="property">The property.</param>
+            <param name="propertyname">The propertyname.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeX.Data.Data.FindNextIndex``1(``0[],``0,System.Int32)">
+            <summary>
+            Finds the next.
+            </summary>
+            <typeparam name="T">Generic Type</typeparam>
+            <param name="array">The array.</param>
+            <param name="value">The value.</param>
+            <param name="start">The start index.</param>
+            <returns>
+            Enumerable Index
+            </returns>
+            <example><code>
+            public void TestFindNextIndexOf()
+            {
+            var testArray = new[] { 1, 2, 3, 1, 3, 4, 5, 7 };
+            foreach (var item in testArray.FindNextIndex(1))
+            {
+               //Do Something
+            }
+            }
+            </code></example>
+        </member>
+        <member name="M:CodeX.Data.Data.Match``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Matches the given list with other list and returns the key and matched count.
+            </summary>
+            <typeparam name="T">Generic Type</typeparam>
+            <param name="thislist">Current List </param>
+            <param name="otherList">List to be Matched with</param>
+            <returns>The key item and count of item in other list <see>
+                                                                      <cref>System.Collections.Generic.IDictionary</cref>
+                                                                  </see>
+            </returns>
+            <example><code>
+               var array1 = new[] { 'a', 'b', 'b', 'c', 'd', 'e' };
+               var array2 = new[] { 'a', 'b', 'c', 'c' };
+               var retDict = array1.Match(array2);
+            </code></example>
+        </member>
+        <member name="M:CodeX.Data.Data.AddRange``2(System.Collections.Generic.Dictionary{``0,System.Collections.Generic.IEnumerable{``1}},``0,System.Collections.Generic.IEnumerable{``1},System.Boolean)">
+            <summary>
+            Adds the range.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="dictionary">The dictionary.</param>
+            <param name="key">The key.</param>
+            <param name="values">The values.</param>
+            <param name="addEvenIfDuplicate">if set to <c>true</c> [add even if duplicate].</param>
+            <example>
+            <code>
+            var sampleList = new Dictionary&lt;string, IEnumerable&lt;string&gt;&gt;
+                   {
+                       {"Jedi", new List&lt;string&gt;{"Yoda"}},
+                       {"Sid", new List&lt;string&gt;{"Siddius"}}
+                   };
+               sampleList.AddRange("Jedi", "Yoda");
+            </code> </example>
+        </member>
+        <member name="M:CodeX.Data.Data.AddRange``2(System.Collections.Generic.Dictionary{``0,System.Collections.Generic.IEnumerable{``1}},``0,``1,System.Boolean)">
+            <summary>
+            Adds the range.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="dictionary">The dictionary.</param>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="addEvenIfDuplicate">if set to <c>true</c> [add even if duplicate].</param>
+            <example>
+            <code>
+            var sampleList = new Dictionary&lt;string, IEnumerable&lt;string&gt;&gt;
+                   {
+                       {"Jedi", new List&lt;string&gt;{"Yoda"}},
+                       {"Sid", new List&lt;string&gt;{"Siddius"}}
+                   };
+               sampleList.AddRange("Jedi", new List&lt;string&gt;{ "Yoda","Yoda"});
+            </code> </example>
+        </member>
+        <member name="T:CodeX.Date.Date">
+            <summary>
+            Contains code extensions for DateTime class
+            </summary>
+        </member>
+        <member name="M:CodeX.Date.Date.ToDateTime(System.String,System.String)">
+            <summary>
+            To the date time.
+            </summary>
+            <param name="s">Date time string.</param>
+            <param name="dateTimeFormat">The date time format, default expected format is <c>dd/MM/yyyy</c>.</param>
+            <returns><c>DateTime</c></returns>
+            <remarks>
+            Format the string as per your wish and pass the format as parameter if not passed it will be considered 
+            as <c>"dd/MM/yyyy"</c> </remarks>
+        </member>
+        <member name="M:CodeX.Date.Date.Jan(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Jan(2000) returns 1st Jan 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Feb(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Feb(2000) returns 1st Feb 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Mar(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Mar(2000) returns 1st Mar 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Apr(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Apr(2000) returns 1st Apr 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.May(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.May(2000) returns 1st May 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Jun(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Jun(2000) returns 1st Jun 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Jul(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Jul(2000) returns 1st Jul 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Aug(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Aug(2000) returns 1st Aug 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Sep(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Sep(2000) returns 1st Sep 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Oct(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Oct(2000) returns 1st Oct 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Nov(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Nov(2000) returns 1st Nov 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.Dec(System.Int32,System.Int32)">
+            <summary>
+            Converts to Date time.
+            </summary>
+            <param name="day">The day.</param>
+            <param name="year">The year.</param>
+            <returns>1.Dec(2000) returns 1st Dec 2000 as DateTime</returns>
+        </member>
+        <member name="M:CodeX.Date.Date.IsLeapYear(System.Int32)">
+            <summary>
+            Determines whether [the specified year] [is leap year].
+            </summary>
+            <param name="year">The year.</param>
+            <returns>
+              <c>true</c> if [the specified year] [is leap year]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:CodeX.IO.IO">
+            <summary>
+            Explains on IO functions in C#
+            </summary>
+        </member>
+        <member name="M:CodeX.IO.IO.ToXml``1(System.Object,System.Boolean)">
+            <summary>
+            Serializes as string.
+            </summary>
+            <typeparam name="T">Generic Type</typeparam>
+            <param name="o">The object.</param>
+            <param name="indented">if set to <c>true</c> [xml will be indented].</param>
+            <returns>
+            Object as XML
+            </returns>
+            <example><code>
+            Person.ToXml(typeof(Person)) returns '&lt;Person&gt;&lt;Age&gt;12&lt;/Age&gt;&lt;Name&gt;Skywalker&lt;/Name&gt;&lt;/Person&gt;'
+            </code> </example>
+        </member>
+        <member name="M:CodeX.IO.IO.ToObject``1(System.String)">
+            <summary>
+            Deserializes the specified XML.
+            </summary>
+            <typeparam name="T">Generic Parameter T</typeparam>
+            <param name="xml">The XML string that contains the properties on the object.</param>
+            <returns>
+            Deserialized Object
+            </returns>
+            <example><code>
+            &lt;Person&gt;&lt;Age&gt;12&lt;/Age&gt;&lt;Name&gt;Skywalker&lt;/Name&gt;&lt;/Person&gt; returns new Person{Age=12,Name="Skywalker"}
+            </code></example>
+        </member>
+        <member name="M:CodeX.IO.IO.ToBinary(System.Object)">
+            <summary>
+            Serialize To Binary
+            </summary>
+            <param name="o">Object to be serialized.</param>
+            <returns>
+            Memory Stream
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ToObject``1(System.IO.Stream)">
+            <summary>
+            To the object.
+            </summary>
+            <typeparam name="T">Generic Type</typeparam>
+            <param name="stream">Stream to be converted.</param>
+            <returns>Object of type T</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.AddRange(System.Byte[],System.Byte[])">
+            <summary>
+            Combines the byte arrays.
+            </summary>
+            <param name="first">First Byte</param>
+            <param name="second">Byte to appended</param>
+            <returns>
+            Byte Array
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.GetFiles(System.IO.DirectoryInfo,System.Collections.Generic.IEnumerable{System.String},System.IO.SearchOption)">
+            <summary>
+            Gets the files from directory for multiple search patterns.
+            </summary>
+            <param name="directoryInfo">The directory info.</param>
+            <param name="patterns">Search patterns</param>
+            <param name="searchOption">The search option.</param>
+            <returns>
+            Array of files from pattern
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.GetFiles(System.IO.DirectoryInfo,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Gets the files from directory for multiple search patterns.
+            </summary>
+            <param name="directoryInfo">The directory info.</param>
+            <param name="patterns">The patterns.</param>
+            <returns>
+            Array of files from pattern
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.EnumerateFiles(System.IO.DirectoryInfo,System.Collections.Generic.IEnumerable{System.String},System.IO.SearchOption)">
+            <summary>
+            Enumerates the files in Directory for multiple search pattern.
+            </summary>
+            <param name="directoryInfo">The directory info.</param>
+            <param name="searchPatterns">List of search patterns.</param>
+            <param name="searchOption">search option.</param>
+            <returns>Enumerable list of FileInfo</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.EnumerateFiles(System.IO.DirectoryInfo,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Enumerates the files in Directory for multiple search pattern.
+            </summary>
+            <param name="directoryInfo">The directory info.</param>
+            <param name="searchPatterns">List of search patterns.</param>
+            <returns>Enumerable list of FileInfo</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Lines(System.String,System.Text.Encoding)">
+            <summary>
+            Gets the lines.
+            </summary>
+            <param name="path">The input file path.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>Lines as Enumerable</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Lines(System.String)">
+            <summary>
+            Gets the lines.
+            </summary>
+            <param name="path">The input file path.</param>
+            <returns>
+            Lines as Enumerable
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Words(System.String,System.String)">
+            <summary>
+            Words in specified line.
+            </summary>
+            <param name="line">The line.</param>
+            <param name="seperator">The separator default=','.</param>
+            <returns>Words in the line using the separator</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Sort(System.String,System.Int32,System.ComponentModel.ListSortDirection,System.String)">
+            <summary>
+            Sorts the file in specified path.
+            </summary>
+            <param name="path">Input file path.</param>
+            <param name="orderByColumnIndex">Index of the order by column.</param>
+            <param name="direction">The direction ascending or descending.</param>
+            <param name="seperator">The separator.</param>
+            <returns>Sorted Entries in file</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Sort(System.String,System.String,System.ComponentModel.ListSortDirection,System.String)">
+            <summary>
+            Sorts the file in specified path and considers the first line of the File as String.
+            </summary>
+            <param name="path">Input file path.</param>
+            <param name="orderByColumnName">Name of the order by column.</param>
+            <param name="direction">The direction ascending or descending.</param>
+            <param name="seperator">The separator.</param>
+            <returns>
+            Sorted Entries in file
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteToFile(System.Collections.Generic.IEnumerable{System.String},System.String,System.Text.Encoding)">
+            <summary>
+            Writes to file.
+            </summary>
+            <param name="enumerable">The enumerable set of values.</param>
+            <param name="filePath">Output file path.</param>
+            <param name="encoding">Encoding to be used.</param>
+            /// <example>{1,2,3,4,5}.WriteToFile("numbers.txt",Encoding.ASCII) writes the numbers one in each line in ASCII format</example>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteToFile(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Writes to file.
+            </summary>
+            <param name="enumerable">The enumerable set of values.</param>
+            <param name="filePath">Output file path.</param>
+            <example>{1,2,3,4,5}.WriteToFile("numbers.txt") writes the numbers one in each line</example>
+        </member>
+        <member name="M:CodeX.IO.IO.AsImage(System.String)">
+            <summary>
+            Converts file as image
+            </summary>
+            <param name="filepath">Path of the file</param>
+            <returns>Image object</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.AsFile(System.String,System.Boolean)">
+            <summary>
+            Converts file path as FileInfo
+            </summary>
+            <param name="filePath">The file path.</param>
+            <param name="shouldCreate">if set to <c>true</c> [Create file].</param>
+            <returns>
+            File Information
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.AsFolder(System.String,System.Boolean)">
+            <summary>
+            Converts path to Directory Info
+            </summary>
+            <param name="dirPath">The directory path.</param>
+            <param name="shouldCreate">if set to <c>true</c> [create folder].</param>
+            <returns>
+            Directory Information
+            </returns>
+        </member>
+        <member name="M:CodeX.IO.IO.AsUri(System.String)">
+            <summary>
+            url to URI
+            </summary>
+            <param name="url">Url as string</param>
+            <returns>Uri <see cref="T:System.Uri"/></returns>
+        </member>
+        <member name="M:CodeX.IO.IO.AsImage(System.Uri)">
+            <summary>
+            Converts uri to Image Object
+            </summary>
+            <param name="uri">The URI.</param>
+            <returns><see cref="T:System.Drawing.Image"/></returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ToStream(System.Drawing.Image,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            To the stream.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="imageFormat">The image format.</param>
+            <returns>Stream object</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ReadAsText(System.IO.FileInfo,System.Text.Encoding)">
+            <summary>
+            Reads file content as text.
+            </summary>
+            <param name="fileInfo">The file info object.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>File content as string</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ReadAsText(System.IO.FileInfo)">
+            <summary>
+            Reads file content as text.
+            </summary>
+            <param name="fileInfo">The file info.</param>
+            <returns>File content as string</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteText(System.IO.FileInfo,System.String,System.Text.Encoding)">
+            <summary>
+            Writes the text to file.
+            </summary>
+            <param name="fileInfo">file info.</param>
+            <param name="content">file content.</param>
+            <param name="encoding">string encoding.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteText(System.IO.FileInfo,System.String)">
+            <summary>
+            Writes the text.
+            </summary>
+            <param name="fileInfo">file info.</param>
+            <param name="content">file content.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.ToStream(System.Drawing.Image)">
+            <summary>
+            To the stream.
+            </summary>
+            <param name="image">The image.</param>
+            <returns><see cref="T:System.IO.Stream"/></returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ToBase64String(System.Byte[],System.Base64FormattingOptions)">
+            <summary>
+            To the base64 string.
+            </summary>
+            <param name="bytes">The bytes.</param>
+            <param name="options">The options.</param>
+            <returns>String in Base64</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Lines(System.IO.FileInfo,System.Text.Encoding)">
+            <summary>
+            Gets the lines from FlatFile
+            </summary>
+            <param name="fileInfo">FileInfo Object</param>
+            <param name="encoding">Encoding of the File</param>
+            <returns>Enumerable string collection</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.Lines(System.IO.FileInfo)">
+            <summary>
+            Gets the lines from FlatFile
+            </summary>
+            <param name="fileInfo">FileInfo Object</param>
+            <returns>Enumerable string collection</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ToBase64String(System.Byte[],System.Int32,System.Int32,System.Base64FormattingOptions)">
+            <summary>
+            To the base64 string.
+            </summary>
+            <param name="bytes">The bytes.</param>
+            <param name="offset">The offset.</param>
+            <param name="length">The length.</param>
+            <param name="options">The options.</param>
+            <returns>string as Base64</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ToDataTable(System.IO.FileInfo,System.String,System.Boolean,System.String)">
+            <summary>
+            Converts delimited file into DataTable
+            </summary>
+            <param name="fileInfo">FileInfo object</param>
+            <param name="delimiter">delimiter value. default value is ","</param>
+            <param name="hasHeader">if set to <c>true</c> [has header]. by default it is true</param>
+            <param name="tableName">Name of the table. default value is "FlatFileDataTable"</param>
+            <returns>Loaded Database</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteToFile(System.Data.DataTable,System.String,System.Text.Encoding,System.String)">
+            <summary>
+            Writes <c>datatable</c> to file.
+            </summary>
+            <param name="dataTable">The data table.</param>
+            <param name="outputFilePath">The output file path.</param>
+            <param name="encoding">The encoding.</param>
+            <param name="delimiter">The delimiter.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.ToXml(System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            To the XML.
+            </summary>
+            <param name="dict">The dictionary.</param>
+            <param name="indented">if set to <c>true</c> [indented].</param>
+            <returns>Serialized Dictionary</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.ToDictionary(System.String)">
+            <summary>
+            To the dictionary.
+            </summary>
+            <param name="s">The Dictionary xml.</param>
+            <returns>Dictionary object</returns>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteToFile(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            Writes <c>datatable</c> to file.
+            </summary>
+            <param name="dataTable">The data table.</param>
+            <param name="outputFilePath">The output file path.</param>
+            <param name="delimiter">The delimiter.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.Print(System.Object,System.Object[])">
+            <summary>
+            Prints the specified automatic.
+            </summary>
+            <param name="o">The automatic.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.PrintLine(System.Object,System.Object[])">
+            <summary>
+            Prints the line.
+            </summary>
+            <param name="o">The automatic.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.PrintError(System.Object,System.Object[])">
+            <summary>
+            Prints the error.
+            </summary>
+            <param name="o">input object</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.PrintErrorLine(System.Object,System.Object[])">
+            <summary>
+            Prints the error line.
+            </summary>
+            <param name="o">input object</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.puts(System.String,System.Object[])">
+            <summary>
+            Prints the specified string.
+            </summary>
+            <param name="o">Input string</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.puterr(System.Object,System.Object[])">
+            <summary>
+            Prints the specified string as Error.
+            </summary>
+            <param name="o">Input string</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteTextAsync(System.String,System.String)">
+            <summary>
+            Writes the text asynchronous.
+            </summary>
+            <param name="filePath">The file path.</param>
+            <param name="text">The text.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CodeX.IO.IO.WriteTextAsync(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            Writes the text asynchronous.
+            </summary>
+            <param name="filePath">The file path.</param>
+            <param name="text">The text.</param>
+            <param name="encoding">The encoding.</param>
+            <returns></returns>
+        </member>
+        <member name="T:CodeX.IO.XmlTextWriterFormattedNoDeclaration">
+            <summary>
+            XmlTextWriterFormattedNoDeclaration class
+            </summary>
+        </member>
+        <member name="M:CodeX.IO.XmlTextWriterFormattedNoDeclaration.#ctor(System.IO.TextWriter,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CodeX.IO.XmlTextWriterFormattedNoDeclaration"/> class.
+            </summary>
+            <param name="w">Text writer</param>
+            <param name="indented">if set to <c>true</c> [indented].</param>
+        </member>
+        <member name="M:CodeX.IO.XmlTextWriterFormattedNoDeclaration.WriteStartDocument">
+            <summary>
+            Writes the XML declaration with the version "1.0".
+            </summary>
+        </member>
+        <member name="T:CodeX.IO.NamespaceIgnorantXmlTextReader">
+            <summary>
+            helper class to ignore namespaces when de-serializing
+            </summary>
+        </member>
+        <member name="M:CodeX.IO.NamespaceIgnorantXmlTextReader.#ctor(System.IO.TextReader)">
+            <summary>
+            Constructor which takes Textreader as argument
+            </summary>
+            <param name="reader"></param>
+        </member>
+        <member name="T:CodeX.Core.Core">
+            <summary>
+            Static class containing core Extensions
+            </summary>
+        </member>
+        <member name="M:CodeX.Core.Core.CombineByteArrays(System.Byte[][])">
+            <summary>
+            Combines the bite arrays.
+            </summary>
+            <param name="arrays">The arrays.</param>
+            <returns>Byte Array.</returns>
+        </member>
+        <member name="M:CodeX.Core.Core.ToEnum``1(System.String,System.Boolean)">
+            <summary>
+            Converts string to <c>Enum</c>
+            </summary>
+            <typeparam name="T">Generic type of <c>Enum</c></typeparam>
+            <param name="strval">String value</param>
+            <param name="ignoreCase">if set to <c>true</c> [ignores case].</param>
+            <returns>string type of <c>Enum</c></returns>
+        </member>
+        <member name="M:CodeX.Core.Core.AsString(System.Enum)">
+            <summary>
+            Ases the string.
+            </summary>
+            <param name="enum">The enum.</param>
+            <returns>String as Enum</returns>
+        </member>
+        <member name="M:CodeX.Core.Core.In``1(``0,``0[])">
+            <summary>
+            Checks if the key is in the list
+            </summary>
+            <typeparam name="T">Generic Type</typeparam>
+            <param name="key">key value</param>
+            <param name="list">list ok values</param>
+            <returns>
+            true if the value is found else returns false
+            </returns>
+            <example>1.In(1,6,9,11) returns true</example>
+        </member>
+        <member name="T:CodeX.Security">
+            <summary>
+            Helper class for Security related methods.
+            </summary>
+        </member>
+        <member name="M:CodeX.Security.GeneratePassword(System.Int32,System.String)">
+            <summary>
+            Generates the password.
+            </summary>
+            <param name="length">The length.</param>
+            <param name="pickfrom">the valid characters in password, default value &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&amp;*&quot;</param>
+            <returns></returns>
+            <example><code> 
+            CodeX.Security.GeneratePassword(8,"a@c#f$")
+            </code>
+            <para> 
+            returns <i> "@@a$###a"</i>
+            </para></example>
+        </member>
+        <member name="M:CodeX.Security.Encrypt(System.String,System.String,System.String)">
+            <summary>
+            Encrypts the given string.
+            </summary>
+            <param name="s">The String to be Encrypted</param>
+            <param name="sharedSecret">The Shared Key.</param>
+            <param name="salt">Salt if any</param>
+            <returns>Encrypted String</returns>
+            <example>
+            <code>Encrypt("mysecretstring",rijn)</code></example>
+        </member>
+        <member name="M:CodeX.Security.Encrypt(System.String,System.Security.Cryptography.HashAlgorithm)">
+            <summary>
+            Encrypts the given string.
+            </summary>
+            <param name="s">The String to be Encrypted</param>
+            <param name="hashAlgorithm">The hash algorithm.<see cref="T:System.Security.Cryptography.HashAlgorithm"/></param>
+            <returns>
+            Encrypted String
+            </returns>
+            <example><code>
+            Encrypt("mysecretstring",sha1CryptoServiceProvider)
+            </code>
+            <para>
+            returns <i>Encoded String</i>
+            </para></example>
+        </member>
+        <member name="M:CodeX.Security.Decrypt(System.String,System.String,System.String)">
+            <summary>
+            Decrypts the given string.
+            </summary>
+            <param name="s">The String to be Decrypted</param>
+            <param name="sharedSecret">The Shared Key.</param>
+            <param name="salt">Salt if any</param>
+            <returns>
+            Decrypted String
+            </returns>
+            <example><code>
+            Decrypt("ahshihAkjthJAjdlhASSjLLAjALjASlJLAJALJLhlAShdaklhsdhasd",rijn)
+            </code><para>
+            returns <i>Decrypted String</i></para></example>
+        </member>
+        <member name="T:CodeX.Strings.Strings">
+            <summary>
+            Contains code extensions for strings
+            </summary>
+        </member>
+        <member name="M:CodeX.Strings.Strings.Fill(System.String,System.Object[])">
+            <summary>
+            Fills the specified format string.
+            </summary>
+            <param name="formatString">The format string.</param>
+            <param name="args">The args.</param>
+            <returns>Filled string</returns>
+            <example><code>
+            "Hello {0} {1}".Fill("Death","Star")
+            </code><para>returns <i>Hello Death Star</i></para></example>
+        </member>
+        <member name="M:CodeX.Strings.Strings.Encode(System.String,System.Text.Encoding)">
+            <summary>
+            Encodes to given string to given to other Encoding format
+            </summary>
+            <param name="s">The string to be Encoded.</param>
+            <param name="encoding">The encoding type</param>
+            <returns>
+            Encoded String
+            </returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToUTF8(System.String)">
+            <summary>
+            Converts string to UTF8 format
+            </summary>
+            <param name="s">string.</param>
+            <returns>Encoded String</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToUTF7(System.String)">
+            <summary>
+            Converts string to UTF7 format
+            </summary>
+            <param name="s">string.</param>
+            <returns>Encoded String</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToUTF32(System.String)">
+            <summary>
+            Converts string to UTF32 format
+            </summary>
+            <param name="s">string.</param>
+            <returns>Encoded String</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToASCII(System.String)">
+            <summary>
+            Converts string to ASCII format
+            </summary>
+            <param name="s">string.</param>
+            <returns>Encoded String</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToBigEndianUnicode(System.String)">
+            <summary>
+            Converts string to BigEndianUnicode format
+            </summary>
+            <param name="s">string.</param>
+            <returns>Encoded String</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToUnicode(System.String)">
+            <summary>
+            Converts string to Unicode format
+            </summary>
+            <param name="s">string.</param>
+            <returns>Encoded String</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToBase64(System.String,System.Int32,System.Int32,System.Base64FormattingOptions)">
+            <summary>
+            Converts string to Base64 format
+            </summary>
+            <param name="s">string</param>
+            <param name="start">The start of the string.</param>
+            <param name="length">The length of the string.</param>
+            <param name="options">The Base64FormattingOptions.</param>
+            <returns>
+            Base64 String
+            </returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.ToBase64(System.String,System.Base64FormattingOptions)">
+            <summary>
+            Converts string to Base64 format.
+            </summary>
+            <param name="s">string</param>
+            <param name="options">Base64FormattingOptions.</param>
+            <returns>
+            Base64 String
+            </returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.IsNullOrEmpty(System.String)">
+            <summary>
+            Determines whether [is null or empty] [the specified string].
+            </summary>
+            <param name="s">The s.</param>
+            <returns>
+              <c>true</c> if [is null or empty] [the specified string]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            Determines whether [is null or white space] [the specified string].
+            </summary>
+            <param name="s">The s.</param>
+            <returns>
+              <c>true</c> if [is null or white space] [the specified string]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.GetBytes(System.String)">
+            <summary>
+            To the bytes.
+            </summary>
+            <param name="s">string.</param>
+            <returns>Bytes using default encoding</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.GetBytes(System.String,System.Text.Encoding)">
+            <summary>
+            To the bytes.
+            </summary>
+            <param name="s">string.</param>
+            <param name="encoding">The encoding.</param>
+            <returns>
+            Bytes using given encoding
+            </returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.GetString(System.Byte[])">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="bytes">input bytes.</param>
+            <returns>output string</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.GetString(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="bytes">input bytes.</param>
+            <param name="start">start.</param>
+            <param name="count">count.</param>
+            <returns>output string</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.GetString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="bytes">input bytes.</param>
+            <param name="encoding">encoding.</param>
+            <returns>output string</returns>
+        </member>
+        <member name="M:CodeX.Strings.Strings.GetString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="bytes">input bytes.</param>
+            <param name="encoding">encoding.</param>
+            <param name="start">start.</param>
+            <param name="count">count.</param>
+            <returns>output string</returns>
+        </member>
+    </members>
+</doc>

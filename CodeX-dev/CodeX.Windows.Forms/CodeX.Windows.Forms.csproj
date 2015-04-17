@@ -133,14 +133,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AxMicrosoft.Vbe.Interop.Forms">
-      <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
     <COMReference Include="Microsoft.Vbe.Interop.Forms">
       <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
       <VersionMajor>2</VersionMajor>

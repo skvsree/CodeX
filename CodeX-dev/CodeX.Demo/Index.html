@@ -11,8 +11,8 @@
     <link type="text/css" rel="stylesheet" href="Style/jquery-ui-1.10.2.custom.min.css" />
     <link type="text/css" rel="stylesheet" href="Style/sunlight.dark.css" />
     <link rel="icon"
-        type="image/png"
-        href="Images/ColorLogoShortened.png" />
+          type="image/png"
+          href="Images/ColorLogoShortened.png" />
     <script>
         $(function () {
             $("#tabs").tabs();
@@ -76,24 +76,27 @@
             <table style="border-spacing: 6px 6px; width: 100%; border-bottom: 2px solid white">
                 <tr>
                     <td>
-                        <img src="Images/ColorLogo.png" height="60" width="460" alt="CodeX Logo" /></td>
+                        <img src="Images/ColorLogo.png" height="60" width="460" alt="CodeX Logo" />
+                    </td>
                     <td style="border-left: 2px solid white"><span style="vertical-align: middle">&nbsp;Code eXtensions</span></td>
                 </tr>
             </table>
         </div>
         <div class="content" style="position: inherit">
             <h2>Why?</h2>
-            Objective is to make developer to code less and do more.  It increases developer's productivity and makes sure that 
-            developer does not have to maintain his code to be reused in another project.  
+            Objective is to make developer to code less and do more.  It increases developer's productivity and makes sure that
+            developer does not have to maintain his code to be reused in another project.
             <h2>What?</h2>
             <ol style="text-align: left">
                 <li><span style="color: white">CodeX.Core</span> - Extends Core .net DataTypes like string, enums, Datatables, Generic Collections, Files, DateTime and more ...</li>
                 <li><span style="color: white">CodeX.Windows.Forms</span> - Extends Windows Form to RichForm and RichConsole with theming and animation.  Extends Colors, Message Box and Provides ability to check UAC and more...</li>
             </ol>
             <h2>How?</h2>
-            <!-- These packages can be installed through <a href="https://nuget.org/packages?q=codex">NuGet packages</a>, to get started with NuGet go 
+            <!-- These packages can be installed through <a href="https://nuget.org/packages?q=codex">NuGet packages</a>, to get started with NuGet go
                 <a href="http://nuget.codeplex.com/wikipage?title=Getting%20Started&referringTitle=Home">here</a> -->
-            You can download the dlls from <a href="http://codebox/codex">CodeBox</a>.  We are working on setting up the downloads in CodePlex and Nuget.
+            You can download the dlls from <a href="https://github.com/skvsree/CodeX/tree/master/CodeX-dev/bin/Release">GitHub</a>. or through Nuget.
+            <pre class="code">PM> Install-Package CodeX2</pre>
+            <pre class="code">PM> Install-Package CodeX.Windows.Forms2</pre>
         </div>
         <div id="tabs">
             <ul>
@@ -105,10 +108,14 @@
                     <h3>Getting Started</h3>
                     <div>
                         <p class="content">
-                            <!--  Once you have installed NuGet package Manager to your Visual Studio. You can either search for CodeX on Manage NuGet Packages 
-                                Or in Package Manager Console run below command. 
-                                <pre class="code">PM> Install-Package CodeX</pre> -->
-                            Goto the project you want to use Code Extensions and "Add Reference" to <a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=fb93f5c5-6da6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX.dll</a>
+                            You can install through NuGet package Manager to your Visual Studio. You can either search for CodeX on Manage NuGet Packages
+                            Or in Package Manager Console run below command.
+                        </p>
+                        <pre class="code">PM> Install-Package CodeX2</pre>
+                        <p class="content">
+                            or <br />
+                            You can direct download below packages from <a href="https://github.com/skvsree/CodeX/tree/master/CodeX-dev/bin/Release">GitHub</a>
+                            Goto the project you want to use Code Extensions and "Add Reference" to CodeX.dll
                         </p>
                     </div>
                     <h3>Documentation</h3>
@@ -134,7 +141,6 @@ var algo = Rijndael.Create();
 var deriveBytes = new Rfc2898DeriveBytes(sharedSecret, Encoding.UTF8.GetBytes(salt));
 algo.Key = deriveBytes.GetBytes(algo.KeySize / 8);
 ICryptoTransform encryptor = algo.CreateEncryptor(algo.Key, algo.IV);
-
 using (var msEncrypt = new MemoryStream())
 {
     msEncrypt.Write(BitConverter.GetBytes(algo.IV.Length), 0, sizeof(int));
@@ -175,14 +181,12 @@ using (var msEncrypt = new MemoryStream())
                                 <td>
                                     <pre class="sunlight-highlight-csharp">
 var key = new Rfc2898DeriveBytes(sharedSecret, Encoding.UTF8.GetBytes(salt));
-
 byte[] bytes = Convert.FromBase64String(s);
 using (var msDecrypt = new MemoryStream(bytes))
 {
     var algo = Rijndael.Create();
     algo.Key = key.GetBytes(algo.KeySize / 8);
     algo.IV = ReadByteArray(msDecrypt);
-
     var decryptor = algo.CreateDecryptor(algo.Key, algo.IV);
     using (var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
     using (var srDecrypt = new StreamReader(csDecrypt))
@@ -210,8 +214,9 @@ var password = password.Encrypt("sharedKey").Decrypt("sharedKey")
                     <div>
                         <table style="border: 1px black solid">
                             <tr>
-                                <td class="contentSmall">Major aim of codeX is enabling developer to write less number of lines but meaningful code.  
-                                    Syntatic sugar plays major part of it. We have tried to avoid static classes as they bloat the code more.  
+                                <td class="contentSmall">
+                                    Major aim of codeX is enabling developer to write less number of lines but meaningful code.
+                                    Syntatic sugar plays major part of it. We have tried to avoid static classes as they bloat the code more.
                                     Except for Security module most of the code starts with instance.
                                 </td>
                             </tr>
@@ -240,7 +245,6 @@ var date1 = dateString.ToDateTime();
 var date2 = dateString.ToDateTime("dd/mm/yyyy"); //Allows you to specify what is the current Date format
 var isLeapYer = date1.IsLeapYear(); //you can check if year n current date is leap year.
 var firstDayOfyear = 1.Jan(2013); //more meaningful of defining date
-
 </pre>
                                             </p>
                                         </div>
@@ -351,12 +355,10 @@ fileName.AsFile().Lines().ToList().ForEach(x => enumerableLines.Add(x.Words()));
 byte[] one = Encoding.Default.GetBytes("Hello");
 byte[] two = Encoding.Default.GetBytes("World");
 byte[] combined = new byte[one.Length + two.Length];
-
 for (int i = 0; i < combined.Length; ++i)
 {
     combined[i] = i < one.Length ? one[i] : two[i - one.Length];
 }
-
 var outputString = Encoding.Default.GetString(combined);</pre>
                                 </td>
 
@@ -425,13 +427,11 @@ var pickfrom = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@
 var length = 8;
 var randomNumber = new StringBuilder();
 var objRand = new Random();
-
 for (var i = 0; i &lt; length; ++i)
 {
     var randomIndex = objRand.Next(0, pickfrom.Length - 1);
     randomNumber.AppendFormat("{0}", pickfrom[randomIndex]);
 }
-
 var password = randomNumber.ToString();</pre>
                                 </td>
 
@@ -454,31 +454,28 @@ var password = Security.GeneratePassword(8).Length;</pre>
                     <h3>Getting Started</h3>
                     <div>
                         <p class="content">
-                            <!-- Once you have installed NuGet package Manager to your Visual Studio. You can either search for CodeX on Manage NuGet Packages 
-                                Or in Package Manager Console run below command.
-                            
-                                <pre class="code">PM> Install-Package CodeX.Windows.Forms</pre>
-                                <span class="contentSmall">For Theme Config</span>
-                                <pre class="code">PM> Install-Package CodeX.Windows.Forms.Themes.Config</pre> -->
-                            Please download below packages from <a href="http://codebox/codex">CodeBox</a>.
-                            <ol>
-                                <li><a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=fb93f5c5-6da6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX.dll</a></li>
-                                <li><a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=11c66c51-70a6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX.Windows.Forms.dll</a></li>
-                                <li><a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=7f3d417a-70a6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX-test.exe.config</a></li>
-                            </ol>
-                            <p class="contentSmall">
-                                <!--  Once you have done that, create a new Windows Forms project in Visual Studio or open your existing Windows
-                                    Forms project. In normal Windows Forms Project each 'Form' is inherited from 'System.Windows.Forms'.  When you change it to 
-                                    CodeX.Windows.Forms.RichForm.  You Get a Modern Look. -->
-                                Once you have done that, create a new Windows Forms project in Visual Studio or open your existing Windows
-                                    Forms project.  Add reference to  <a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=fb93f5c5-6da6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX.dll</a>
-                                and <a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=11c66c51-70a6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX.Windows.Forms.dll</a>
-                                In normal Windows Forms Project each 'Form' is inherited from 'System.Windows.Forms'.  When you change it to 
-                                    CodeX.Windows.Forms.RichForm.  You Get a Modern Look.  Then you have to add ThemeSection as shown in <a href="http://codebox/codex/Project/FileDownload.aspx?DownloadId=7f3d417a-70a6-e211-959b-00155d191ef0&ReturnUrl=http%3a%2f%2fcodebox%2fRelease%2fProjectReleases.aspx%3fProjectName%3dcodex%26ReleaseId%3d27258">CodeX-test.exe.config</a>
+                             Once you have installed NuGet package Manager to your Visual Studio. You can either search for CodeX on Manage NuGet Packages
+                            Or in Package Manager Console run below command.
+                        </p>
 
-                                If you have any problem in doing this, you can mail to <a href="mailto:codeextensions@outlook.com">codeextensions@outlook.com</a>
+                        <pre class="code">PM> Install-Package CodeX.Windows.Forms2</pre>
+                        <p class="content">
+                            or you can download below packages from <a href="https://github.com/skvsree/CodeX/tree/master/CodeX-dev/bin/Release">GitHub</a> 
                             </p>
-                            <pre class="sunlight-highlight-csharp">
+                        <br />
+                        <p class="contentSmall">
+                            <!--  Once you have done that, create a new Windows Forms project in Visual Studio or open your existing Windows
+                                Forms project. In normal Windows Forms Project each 'Form' is inherited from 'System.Windows.Forms'.  When you change it to
+                                CodeX.Windows.Forms.RichForm.  You Get a Modern Look. -->
+                            Once you have done that, create a new Windows Forms project in Visual Studio or open your existing Windows
+                            Forms project.  Add reference to  CodeX.dll
+                            and CodeX.Windows.Forms.dll
+                            In normal Windows Forms Project each 'Form' is inherited from 'System.Windows.Forms'.  When you change it to
+                            CodeX.Windows.Forms.RichForm.  You Get a Modern Look.  Then you have to add ThemeSection as shown in CodeX-test.exe.config
+
+                            If you have any problem in doing this, you can mail to <a href="mailto:codeextensions@outlook.com">codeextensions@outlook.com</a>
+                        </p>
+                        <pre class="sunlight-highlight-csharp">
 using CodeX.Windows.Forms;
 public partial class Form1 : RichForm //Replace Traditional form with Rich Form
 {
@@ -490,44 +487,90 @@ public partial class Form1 : RichForm //Replace Traditional form with Rich Form
     }
 }
 </pre>
-                            <img class="popped-up-img" src="Images/SampleForm.png" width="200" height="200" title="Visual Studio Black Theme" alt="Visual Studio Black Theme" />
-                            <img class="popped-up-img" src="Images/SampleForm-Girly.png" width="200" height="200" title="Girly Theme" alt="Girly Theme" />
-                            <img class="popped-up-img" src="Images/SampleForm-GreenHornet.png" width="200" height="200" title="Green Hornet Theme" alt="Green Hornet Theme" />
-                            <img class="popped-up-img" src="Images/SampleForm-StarWars.png" width="200" height="200" title="Star Wars Theme" alt="Star Wars Theme" />
+                        <img class="popped-up-img" src="Images/SampleForm.png" width="200" height="200" title="Visual Studio Black Theme" alt="Visual Studio Black Theme" />
+                        <img class="popped-up-img" src="Images/SampleForm-Girly.png" width="200" height="200" title="Girly Theme" alt="Girly Theme" />
+                        <img class="popped-up-img" src="Images/SampleForm-GreenHornet.png" width="200" height="200" title="Green Hornet Theme" alt="Green Hornet Theme" />
+                        <img class="popped-up-img" src="Images/SampleForm-StarWars.png" width="200" height="200" title="Star Wars Theme" alt="Star Wars Theme" />
                         </p>
                     </div>
                     <h3>Configuration file</h3>
                     <div>
                         <p class="content">
-                            You can store your Themes in App.Config file.  Below is Section to be added to your Confguration file. 
+                            You can store your Themes in App.Config file.  Below is Section to be added to your Confguration file.
                             You can add your own themes as well.
                         </p>
                         <p>
                             <pre class="sunlight-highlight-xml">
-&lt;configuration&gt;
-  &lt;configSections&gt;
+&lt;configSections&gt;
     &lt;section name=&quot;themeSection&quot; type=&quot;CodeX.Windows.Forms.ThemeListConfiguration, CodeX.Windows.Forms&quot;&gt;&lt;/section&gt;
-  &lt;/configSections&gt;
-  &lt;themeSection&gt;
+&lt;/configSections&gt;
+&lt;themeSection&gt;
     &lt;themes&gt;
-      &lt;add name=&quot;Girly&quot; title=&quot;Girly&quot; selected=&quot;true&quot; &gt;
-        &lt;window forecolor=&quot;White&quot; backcolor=&quot;MagnetaX&quot; bordercolor=&quot;White&quot; animation=&quot;SlideDown&quot; /&gt;
-      &lt;/add&gt;
-      &lt;add name=&quot;GreenHornet&quot; title=&quot;Green Hornet&quot; selected=&quot;false&quot; &gt;
-        &lt;window forecolor=&quot;LightGreen&quot; backcolor=&quot;Green&quot; bordercolor=&quot;Gold&quot; animationspeed=&quot;1000&quot; /&gt;
-      &lt;/add&gt;
-      &lt;add name=&quot;StarWars&quot; title=&quot;Star Wars&quot; selected=&quot;false&quot; &gt;
-        &lt;window forecolor=&quot;Gold&quot; backcolor=&quot;Black&quot;  bordercolor=&quot;Gold&quot; /&gt;
-      &lt;/add&gt;     
-      &lt;add name=&quot;VisualStudioBlack&quot; title=&quot;Visual Studio Black&quot; selected=&quot;false&quot; &gt;
+        &lt;add name=&quot;Girly&quot; selected=&quot;true&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;MagnetaX&quot; bordercolor=&quot;White&quot; animation=&quot;SlideDown&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;GreenHornet&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;LightGreen&quot; backcolor=&quot;Green&quot; bordercolor=&quot;Gold&quot; animationspeed=&quot;1000&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;StarWars&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;Gold&quot; backcolor=&quot;Black&quot; bordercolor=&quot;Gold&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;Vampire&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;Silver&quot; backcolor=&quot;DarkRed&quot; bordercolor=&quot;DarkBlue&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;Burning&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;OrangeX&quot; backcolor=&quot;DarkRed&quot; bordercolor=&quot;Gold&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;DeathStar&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;AliceBlue&quot; backcolor=&quot;Black&quot; bordercolor=&quot;AliceBlue&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;Formal&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;DarkGrayX&quot; backcolor=&quot;AliceBlue&quot; bordercolor=&quot;DarkGrayX&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;VisualStudioBlack&quot; selected=&quot;false&quot;&gt;
         &lt;window forecolor=&quot;BlueX&quot; backcolor=&quot;DarkGrayX&quot; bordercolor=&quot;BlueX&quot;/&gt;
-      &lt;/add&gt;     
-      &lt;add name=&quot;MetroLime&quot; title=&quot;Metro Lime&quot; selected=&quot;false&quot; &gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;VisualStudioBlue&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;MidnightBlue&quot; backcolor=&quot;LightGray&quot; bordercolor=&quot;MidnightBlue&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;VisualStudioWhite&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;BlueX&quot; backcolor=&quot;Lavender&quot; bordercolor=&quot;BlueX&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;BabyPink&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;PinkX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroPurple&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;PurpleX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroTeal&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;TealX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroLime&quot; selected=&quot;false&quot;&gt;
         &lt;window forecolor=&quot;White&quot; backcolor=&quot;LimeX&quot; bordercolor=&quot;White&quot;/&gt;
-      &lt;/add&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroBrown&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;BrownX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroOrange&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;OrangeX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroBlue&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;BlueX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroRed&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;RedX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroGreen&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;GreenX&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;MetroMaroon&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;Maroon&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
+        &lt;add name=&quot;BlackAnd&quot; selected=&quot;false&quot;&gt;
+        &lt;window forecolor=&quot;White&quot; backcolor=&quot;Black&quot; bordercolor=&quot;White&quot;/&gt;
+        &lt;/add&gt;
     &lt;/themes&gt;
-  &lt;/themeSection&gt;
-&lt;/configuration&gt;
+&lt;/themeSection&gt;
 </pre>
                         </p>
                     </div>
@@ -584,7 +627,7 @@ namespace SamplePasswordStorageApplication
         <br />
         <div id="about">Contacts</div>
         <div id="aboutcontent" style="font-size: smaller; color: orange">
-            This is Part time project created by Microsoft employees.  
+            This is Part time project created by Microsoft employees.
             <br />
             <ol>
                 <li>Anuj</li>
@@ -599,7 +642,7 @@ namespace SamplePasswordStorageApplication
         <br />
         <div style="font-size: small; color: white">
             <p>
-                 All rights reserved.  When you redistribute the packages, please distribute License file found <a href="Data/License.txt">here</a>.
+                All rights reserved.  When you redistribute the packages, please distribute License file found <a href="Data/License.txt">here</a>.
             </p>
         </div>
         <br />
